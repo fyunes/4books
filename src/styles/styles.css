@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/src/assets/images/background.jpg");
+}
+
+.divRandom {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
