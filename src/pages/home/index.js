@@ -1,11 +1,10 @@
-import React from "react";
+import { Flex } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <div>
-      <div className="divRandom">QUIDBWQ</div>
+    <Flex direction="column" color="beige.100">
       Home
-    </div>
+    </Flex>
   );
 };
 
