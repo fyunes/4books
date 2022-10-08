@@ -1,7 +1,8 @@
 import React from 'react';
-import Form from '../../components/Form'
+import { Form } from "react-router-dom";
 
-const SignUpForm = () => {
+
+const SignUpPage = () => {
   return (
     <div> 
       <h2>Sign Up Form</h2>
@@ -12,4 +13,4 @@ const SignUpForm = () => {
   )
 };
 
-export default SignUpForm;
+export default SignUpPage;
