@@ -1,7 +1,17 @@
-import React from "react";
-
 const Navbar = () => {
-  return <div>Navbar</div>;
-};
+    return (
+        <nav className="navbar">
+        <h1>Navbar</h1>
+        <div className="links">
+            <a href="/">Home</a>
+            <a href="/create" style={{
+            color: "white",
+            backgroundColor: '#f1356d',
+            borderRadius: '8px'
+            }}>New</a>
+        </div>
+        </nav>
+    );
+}
 
 export default Navbar;
