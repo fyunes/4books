@@ -1,0 +1,788 @@
+{
+  "books": [
+    {
+      "kind": "books#volume",
+      "id": "p3QQjwEACAAJ",
+      "etag": "/w80Bph/Py8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/p3QQjwEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter and the philosopher's stone",
+        "authors": ["J. K. Rowling"],
+        "publishedDate": "2010",
+        "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago! (Source : 4e de couverture)",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8498382661"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788498382662"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 254,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 7,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=p3QQjwEACAAJ&dq=potter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=p3QQjwEACAAJ&dq=potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_philosopher_s_stone.html?hl=&id=p3QQjwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=p3QQjwEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "2euKXB-3_aoC",
+      "etag": "PjUTLtofk0Y",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/2euKXB-3_aoC",
+      "volumeInfo": {
+        "title": "El temor de un hombre sabio (Crónica del asesino de reyes 2)",
+        "authors": ["Patrick Rothfuss"],
+        "publisher": "PLAZA & JANÉS",
+        "publishedDate": "2011-11-18",
+        "description": "Llega El temor de un hombre sabio, la esperada continuación de la historia de Kvothe y El nombre del viento. «Todo hombre sabio teme tres cosas: la tormenta en el mar, la noche sin luna y la ira de un hombre amable.» El hombre había desaparecido. El mito no. Músico, mendigo, ladrón, estudiante, mago, trotamundos, héroe y asesino, Kvothe había borrado su rastro. Y ni siquiera ahora que le han encontrado, ni siquiera ahora que las tinieblas invaden los rincones del mundo, está dispuesto a regresar. Pero su historia prosigue, la aventura continúa, y Kvothe seguirá contándola para revelar la verdad tras la leyenda. «Me llamo Kvothe. Quizá hayas oído hablar de mí...» La crítica ha dicho... «La nueva promesa de la literatura fantástica.» Qué leer «El Tolkien estadounidense.» Juan Gómez-Jurado, ABC",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788401352836"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8401352835"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 1200,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 57,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "3.43.41.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=2euKXB-3_aoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=2euKXB-3_aoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=2euKXB-3_aoC&printsec=frontcover&dq=rothfuss&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=2euKXB-3_aoC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=2euKXB-3_aoC"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 349.99,
+          "currencyCode": "ARS"
+        },
+        "retailPrice": {
+          "amount": 349.99,
+          "currencyCode": "ARS"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=2euKXB-3_aoC&rdid=book-2euKXB-3_aoC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 349990000,
+              "currencyCode": "ARS"
+            },
+            "retailPrice": {
+              "amountInMicros": 349990000,
+              "currencyCode": "ARS"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/El_temor_de_un_hombre_sabio_Cr%C3%B3nica_del-sample-epub.acsm?id=2euKXB-3_aoC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/El_temor_de_un_hombre_sabio_Cr%C3%B3nica_del-sample-pdf.acsm?id=2euKXB-3_aoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=2euKXB-3_aoC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Llega El temor de un hombre sabio, la esperada continuación de la historia de Kvothe y El nombre del viento. «Todo hombre sabio teme tres cosas: la tormenta en el mar, la noche sin luna y la ira de un hombre amable»."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "2_mPzgEACAAJ",
+      "etag": "bfcKGORCzfE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/2_mPzgEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter Y El Cáliz de Fuego. Edición Slytherin ",
+        "authors": ["J.k. Rowling"],
+        "publisher": "Salamandra Infantil Y Juvenil",
+        "publishedDate": "2021-12-07",
+        "description": "Celebra el 20° aniversario de Harry Potter con esta edición especial de Harry Potter y el cáliz de fuego. «Habrá tres pruebas, espaciadas en el curso escolar, que medirán a los campeones en muchos aspectos diferentes: sus habilidades mágicas, su osadía, sus dotes de deducción y, por supuesto, su capacidad para sortear el peligro.» Se va a celebrar en Hogwarts el Torneo de los Tres Magos. Sólo los alumnos mayores de diecisiete años pueden participar en esta competición, pero, aun así, Harry sueña con ganarla. En Halloween, cuando el cáliz de fuego elige a los campeones, Harry se lleva una sorpresa al ver que su nombre es uno de los escogidos por el cáliz mágico. Durante el torneo deberá enfrentarse a desafíos mortales, dragones y magos tenebrosos, pero con la ayuda de Ron y Hermione, sus mejores amigos, ¡quizá logre salir con vida!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8418174374"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788418174377"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 720,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=2_mPzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=2_mPzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=2_mPzgEACAAJ&dq=potter&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=2_mPzgEACAAJ&dq=potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_Y_El_C%C3%A1liz_de_Fuego_Edici.html?hl=&id=2_mPzgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=2_mPzgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "El Torneo de los Tres Magos se llevará a cabo en Hogwarts."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NvNcAAAACAAJ",
+      "etag": "ZWLT+Qpm/bs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NvNcAAAACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter 4 y el cáliz de fuego",
+        "authors": ["J. K. Rowling"],
+        "publishedDate": "2011-01-01",
+        "description": "Fantasy. På mystisk vis er Harry Potter blevet udvalgt til at deltage i en magisk trekamp mellem de forskellige troldmandsskoler. Samtidig er hans dødsfjende troldmanden Voldemort ved at genvinde sin magt",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8498383447"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788498383447"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 635,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 8,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NvNcAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NvNcAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=NvNcAAAACAAJ&dq=potter&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=NvNcAAAACAAJ&dq=potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_4_y_el_c%C3%A1liz_de_fuego.html?hl=&id=NvNcAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NvNcAAAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Fantasy. På mystisk vis er Harry Potter blevet udvalgt til at deltage i en magisk trekamp mellem de forskellige troldmandsskoler. Samtidig er hans dødsfjende troldmanden Voldemort ved at genvinde sin magt"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "zl13g5uRM4EC",
+      "etag": "wriiwu2Slyc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zl13g5uRM4EC",
+      "volumeInfo": {
+        "title": "Harry Potter y la cámara secreta",
+        "authors": ["J.K. Rowling"],
+        "publisher": "Pottermore Publishing",
+        "publishedDate": "2015-12-08",
+        "description": "«Hay una conspiración, Harry Potter. Una conspiración para hacer que este año sucedan las cosas más terribles en el Colegio Hogwarts de Magia y Hechicería.» El verano de Harry Potter ha incluido el peor cumpleaños de su vida, unos presagios muy poco halagüeños por parte de un elfo doméstico llamado Dobby y ser rescatado de casa de los Dursleys por su amigo Ron Weasley en un coche mágico volador. Cuando regresa al Colegio Hogwarts de Magia y Hechicería para cursar su segundo año, Harry escucha susurros extraños por los pasillos vacíos del colegio... Y luego comienzan los ataques. Se encuentran a estudiantes convertidos en piedra... Los terribles presagios de Dobby parecen hacerse realidad. Tema musical compuesto por James Hannigan.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781101322"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1781101329"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 365,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 45,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.10.10.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zl13g5uRM4EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zl13g5uRM4EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=zl13g5uRM4EC&printsec=frontcover&dq=potter&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=zl13g5uRM4EC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zl13g5uRM4EC"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 104,
+          "currencyCode": "ARS"
+        },
+        "retailPrice": {
+          "amount": 104,
+          "currencyCode": "ARS"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=zl13g5uRM4EC&rdid=book-zl13g5uRM4EC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 104000000,
+              "currencyCode": "ARS"
+            },
+            "retailPrice": {
+              "amountInMicros": 104000000,
+              "currencyCode": "ARS"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_c%C3%A1mara_secreta-sample-epub.acsm?id=zl13g5uRM4EC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_c%C3%A1mara_secreta-sample-pdf.acsm?id=zl13g5uRM4EC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zl13g5uRM4EC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "«Hay una conspiración, Harry Potter."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "z2hczgEACAAJ",
+      "etag": "GgGtXthMVu8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/z2hczgEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter Y El Misterio del Príncipe ",
+        "authors": ["J. K. Rowling"],
+        "publisher": "Salamandra Infantil Y Juvenil",
+        "publishedDate": "2021-08-24",
+        "description": "Harry Potter y el misterio del príncipe es la sexta novela de la ya clásica serie fantástica de la autora británica J.K. Rowling. Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán del equipo de quidditch, los ensayos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los férreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: «El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida.» El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago contará con un viejo libro de pociones perteneciente a un misterioso personaje, alguien que se hace llamar Príncipe Mestizo. ENGLISH DESCRIPTION Harry Potter and the Half-Blood Prince is the sixth volume of British author J.K. Rowling's now classic series of fantasy novels. At age sixteen, in the midst of serious events plaguing England, Harry begins his sixth year at Hogwarts. Having been chosen captain of the Quidditch team, practices, tests, and girls are keeping him busy, but that peace and tranquility is short-lived. Despite tight security measures that protect the school, two students are brutally attacked. Dumbledore knows that, as proclaimed in the Prophecy, the time is approaching when Harry and Voldemort must face each other in a deadly match: \"The only one with strong enough powers to defeat the Dark Lord is approaching ... One of the two must die at the hands of the other, because neither can live as long as the other is still alive.\" The old Headmaster will enlist Harry's help, and together they will undertake dangerous trips in order to try to weaken the enemy, for this the young wizard will have the help of an old potion book that belonged to a mysterious person, someone who calls himself the Half-Blood Prince.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "6073193955"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9786073193955"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 608,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=z2hczgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=z2hczgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=z2hczgEACAAJ&dq=potter&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=z2hczgEACAAJ&dq=potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_Y_El_Misterio_del_Pr%C3%ADncipe.html?hl=&id=z2hczgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=z2hczgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "ENGLISH DESCRIPTION Harry Potter and the Half-Blood Prince is the sixth volume of British author J.K. Rowling&#39;s now classic series of fantasy novels."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fQBiAwAAQBAJ",
+      "etag": "rss5NLK/JU0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fQBiAwAAQBAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y la Biblia",
+        "subtitle": "La amenaza tras la magia",
+        "authors": ["Richard Abanes"],
+        "publisher": "Vida",
+        "publishedDate": "2015-03-24",
+        "description": "Harry Potter y sus aventuras mágicas en una escuela de hechicería continúa cautivando a millones de personas mundialmente. El mercado ha sido inundado con un centenar de productos relacionados a esta historia: juegos de barajas, ropa y hasta muebles para el hogar.Sin embargo, unas cuantas preguntas al respecto deben ser formuladas:* Ofrece Harry Potter alguna moraleja positiva para los niños de hoy?* La hechicería de Harry es verdaderamente ficción o esta basada en el ocultismo?* Cómo se compara Harry Potter a otros libros de ficción para niños escritos por C.S. Lewis o J.R.R. Tolkien?En este libro amigable y de gran ayuda, Richard Abanes responde a estas interrogantes, analiza profundamente a una sociedad que tiende a volcarse al paganismo y examina la razón de por qué Dios dijo \"no\" al ocultismo.Harry Potter y la Biblia le ayudará a decidir sabiamente respecto a este tema para su familia.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780829777437"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0829777431"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 272,
+        "printType": "BOOK",
+        "categories": ["Religion"],
+        "averageRating": 2,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fQBiAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fQBiAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=fQBiAwAAQBAJ&printsec=frontcover&dq=potter&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 595.23,
+          "currencyCode": "ARS"
+        },
+        "retailPrice": {
+          "amount": 416.66,
+          "currencyCode": "ARS"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=fQBiAwAAQBAJ&rdid=book-fQBiAwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 595230000,
+              "currencyCode": "ARS"
+            },
+            "retailPrice": {
+              "amountInMicros": 416660000,
+              "currencyCode": "ARS"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_Biblia-sample-epub.acsm?id=fQBiAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_Biblia-sample-pdf.acsm?id=fQBiAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fQBiAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "El mercado ha sido inundado con un centenar de productos relacionados a esta historia: juegos de barajas, ropa y hasta muebles para el hogar.Sin embargo, unas cuantas preguntas al respecto deben ser formuladas:* Ofrece Harry Potter alguna ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QeYF9kTMypgC",
+      "etag": "3TXCuuhLUXs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QeYF9kTMypgC",
+      "volumeInfo": {
+        "title": "El nombre del viento (Crónica del asesino de reyes 1)",
+        "authors": ["Patrick Rothfuss"],
+        "publisher": "PLAZA & JANÉS",
+        "publishedDate": "2011-11-18",
+        "description": "Atípica, profunda y sincera, El nombre del viento es una novela de aventuras, de historias dentro de otras historias, de misterio, de amistad, de amor, de magia y de superación. La novela que ha consagrado a Patrick Rothfuss como fenómeno editorial de los últimos años. En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. «Viajé, amé, perdí, confié y me traicionaron.» «He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. »Me llamo Kvothe. Quizá hayas oído hablar de mí.» La crítica ha dicho... «Una estupenda y fuera de lo común novela de aventuras fantásticas.» Justo Navarro, El País «Sin duda El nombre del viento se convertirá en un clásico.» The Times «Un libro para quien conoce el mágico poder de las palabras.» Ricard Ruiz Garzón, El Periódico de Catalunya «Una aventura insólita y preciosa. Puntuación: Sobresaliente.» Manu González, Qué Leer «No sucede a menudo, pero El nombre del viento de Patrick Rothfuss sí es tan bueno como dicen las reseñas.» Locus «Llena de música, magia, amor y pérdida, el absorbente y vivo debut de Patrick Rothfuss nos ha deslumbrado.» Amazon.com «A veces, con suerte y unas cuantas recomendaciones de buenos amigos, se vuelve a descubrir otro paraíso en el que quedarse, un par de semanas, unos cuantos días. Y eso es justo lo que me ha pasado con El nombre del viento.» Toni Rodero, La Voz de Avilés",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788401352799"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8401352797"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 880,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 452,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "4.24.24.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QeYF9kTMypgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QeYF9kTMypgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=QeYF9kTMypgC&printsec=frontcover&dq=rothfuss&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QeYF9kTMypgC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QeYF9kTMypgC"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 349.99,
+          "currencyCode": "ARS"
+        },
+        "retailPrice": {
+          "amount": 349.99,
+          "currencyCode": "ARS"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QeYF9kTMypgC&rdid=book-QeYF9kTMypgC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 349990000,
+              "currencyCode": "ARS"
+            },
+            "retailPrice": {
+              "amountInMicros": 349990000,
+              "currencyCode": "ARS"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/El_nombre_del_viento_Cr%C3%B3nica_del_asesin-sample-epub.acsm?id=QeYF9kTMypgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.ar/books/download/El_nombre_del_viento_Cr%C3%B3nica_del_asesin-sample-pdf.acsm?id=QeYF9kTMypgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QeYF9kTMypgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "La novela que ha consagrado a Patrick Rothfuss como fenómeno editorial de los últimos años. En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "FX22zQEACAAJ",
+      "etag": "Q5HFMj1GIn8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/FX22zQEACAAJ",
+      "volumeInfo": {
+        "title": "Harry Potter y el Prisionero de Azkaban. Edición Ravenclaw ",
+        "authors": ["J. K. Rowling"],
+        "publishedDate": "2020-11-17",
+        "description": "Siempre tendrás una casa en Hogwarts. Edición 20 aniversario de Harry Potter y el prisionero de Azkaban Deja que la clásica saga de J. K. Rowling te lleve de vuelta al Colegio Hogwarts de Magia y Hechicería. Con motivo de la celebración del 20 aniversario de la primera publicación de Harry Potter y el prisionero de Azkaban, estas irresistibles ediciones rinden homenaje al carácter noble de las cuatro casas de Hogwarts. Con nuevas ilustraciones en el interior y un diseño único para las cubiertas, obra de Levi Pinfold, ganador de la Medalla Kate Greenaway, cada uno de los libros contiene material adicional exclusivo que amplía la información sobre cada casa. Una edición única que no puedes perderte si alguna vez te has imaginado sentado bajo el Sombrero Seleccionador en el Gran Comedor de Hogwarts.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8418174110"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788418174117"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 416,
+        "printType": "BOOK",
+        "categories": ["Juvenile Fiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=FX22zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=FX22zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=FX22zQEACAAJ&dq=potter&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=FX22zQEACAAJ&dq=potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_el_Prisionero_de_Azkaban.html?hl=&id=FX22zQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=FX22zQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "ENGLISH DESCRIPTION You will always have a home at Hogwarts. The 20th Anniversary Edition of Harry Potter and the Prisoner of Azkaban Let J.K. Rowling&#39;s classic saga take you back to Hogwarts School of Witchcraft and Wizardry."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "qQkFogEACAAJ",
+      "etag": "MDiTomtZM7I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/qQkFogEACAAJ",
+      "volumeInfo": {
+        "title": "La música del silencio",
+        "authors": ["Patrick Rothfuss"],
+        "publishedDate": "2014-10-02",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8401343577"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788401343575"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 128,
+        "printType": "BOOK",
+        "categories": ["Juvenile Nonfiction"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qQkFogEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qQkFogEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.ar/books?id=qQkFogEACAAJ&dq=rothfuss&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.ar/books?id=qQkFogEACAAJ&dq=rothfuss&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_m%C3%BAsica_del_silencio.html?hl=&id=qQkFogEACAAJ"
+      },
+      "saleInfo": {
+        "country": "AR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "AR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=qQkFogEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Una novela corta que arroja algo más de luz sobre la historia de Kvothe y el universo de la Crónica del Asesino de Reyes. La música del silencio es una muestra más del brillante talento de Rothfuss como narrador."
+      }
+    }
+  ]
+}
