@@ -1,14 +1,21 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
   colors: {
     maroon: {
+      op: "rgba(34, 12, 15, 0.5)",
       100: "#e3606b",
       300: "#b4404e",
       600: "#8f2a36",
-      900: "#591e22",
+      700: "#591e22",
+      900: "#2c0d0f",
     },
     brown: {
+      op: "rgba(163, 81, 60, 0.3)",
       100: "#df916f",
       300: "#a3513c",
       600: "#85392d",
@@ -21,12 +28,19 @@ const theme = extendTheme({
       900: "#844019",
     },
     beige: {
-      100: "#f0d290",
+      100: "#ffde95",
       300: "#c7aa6c",
-      600: "#9b7846",
-      900: "#735e31",
+      500: "#cf9e36",
+      600: "#9b7e55",
+      900: "#67522b",
+    },
+    sign: {
+      500: "#f0d290",
+    },
+    navbar: {
+      600: "#f0d290",
     },
   },
 });
 
-export default theme
+export default theme;

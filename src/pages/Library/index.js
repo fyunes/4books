@@ -1,31 +1,39 @@
 import BooksList from "../../components/BooksList";
 import BooksMenu from "../../components/BookMenu";
-import { Flex, HStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { useEffect } from "react";
 
-const Library = () => {
+const Library = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  });
+
   return (
-    <Flex
-      py={5}
-      borderWidth={2}
-      borderColor="red"
+    <Box
       w="100%"
       alignItems="center"
       justifyContent="center"
       direction="column"
-      color="beige.100"
+      // borderWidth={2}
+      // borderColor='red'
     >
-      <HStack
+      <Box
+        display="flex"
+        flexDirection={{ base: "column", md: "row" }}
+        alignItems={{ base: "center", md: 'start' }}
+        justifyContent="center"
         py={5}
-        px={2}
-        w="95%"
-        borderWidth={2}
-        borderColor="yellow"
-        justifyContent="space-between"
+        px={3}
+        w="100%"
+        // borderColor='white'
+        // borderWidth={2}
+        gap={2}
+        borderRadius={20}
       >
         <BooksMenu />
         <BooksList />
-      </HStack>
-    </Flex>
+      </Box>
+    </Box>
   );
 };
 

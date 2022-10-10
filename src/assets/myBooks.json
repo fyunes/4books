@@ -1,0 +1,103 @@
+{
+  "books": [
+    {
+      "title": "Harry Potter and the philosopher's stone",
+      "id": "p3QQjwEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2010",
+      "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago! (Source : 4e de couverture)",
+      "category": "Juvenile Fiction",
+      "pageCount": 254,
+      "image": "http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "title": "El temor de un hombre sabio (Crónica del asesino de reyes 2)",
+      "id": "2euKXB-3_aoC",
+      "author": "Patrick Rothfuss",
+      "year": "2011",
+      "description": "Llega El temor de un hombre sabio, la esperada continuación de la historia de Kvothe y El nombre del viento. «Todo hombre sabio teme tres cosas: la tormenta en el mar, la noche sin luna y la ira de un hombre amable.» El hombre había desaparecido. El mito no. Músico, mendigo, ladrón, estudiante, mago, trotamundos, héroe y asesino, Kvothe había borrado su rastro. Y ni siquiera ahora que le han encontrado, ni siquiera ahora que las tinieblas invaden los rincones del mundo, está dispuesto a regresar. Pero su historia prosigue, la aventura continúa, y Kvothe seguirá contándola para revelar la verdad tras la leyenda. «Me llamo Kvothe. Quizá hayas oído hablar de mí...» La crítica ha dicho... «La nueva promesa de la literatura fantástica.» Qué leer «El Tolkien estadounidense.» Juan Gómez-Jurado, ABC",
+      "category": "Fiction",
+      "pageCount": 1200,
+      "image": "http://books.google.com/books/content?id=2euKXB-3_aoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter Y El Cáliz de Fuego. Edición Slytherin ",
+      "id": "2_mPzgEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2021",
+      "description": "Celebra el 20° aniversario de Harry Potter con esta edición especial de Harry Potter y el cáliz de fuego. «Habrá tres pruebas, espaciadas en el curso escolar, que medirán a los campeones en muchos aspectos diferentes: sus habilidades mágicas, su osadía, sus dotes de deducción y, por supuesto, su capacidad para sortear el peligro.» Se va a celebrar en Hogwarts el Torneo de los Tres Magos. Sólo los alumnos mayores de diecisiete años pueden participar en esta competición, pero, aun así, Harry sueña con ganarla. En Halloween, cuando el cáliz de fuego elige a los campeones, Harry se lleva una sorpresa al ver que su nombre es uno de los escogidos por el cáliz mágico. Durante el torneo deberá enfrentarse a desafíos mortales, dragones y magos tenebrosos, pero con la ayuda de Ron y Hermione, sus mejores amigos, ¡quizá logre salir con vida!",
+      "category": "Juvenile Fiction",
+      "pageCount": 720,
+      "image": "http://books.google.com/books/content?id=2_mPzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "title": "A Game of Thrones",
+      "id": "5NomkK4EV68C",
+      "author": "George R. R. Martin",
+      "year": "2003",
+      "description": "NOW THE ACCLAIMED HBO SERIES GAME OF THRONES—THE MASTERPIECE THAT BECAME A CULTURAL PHENOMENON Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season. Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen’s brothers Jaime and Tyrion of the powerful and wealthy House Lannister—the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms. Meanwhile, across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki—whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.",
+      "category": "Fiction",
+      "pageCount": 835,
+      "image": "http://books.google.com/books/content?id=5NomkK4EV68C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter y el cáliz de fuego",
+      "id": "NvNcAAAACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2011",
+      "description": "Fantasy. På mystisk vis er Harry Potter blevet udvalgt til at deltage i en magisk trekamp mellem de forskellige troldmandsskoler. Samtidig er hans dødsfjende troldmanden Voldemort ved at genvinde sin magt",
+      "category": "Juvenile Fiction",
+      "pageCount": 635,
+      "image": "http://books.google.com/books/content?id=NvNcAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter y la cámara secreta",
+      "id": "zl13g5uRM4EC",
+      "author": "J. K. Rowling",
+      "year": "2015",
+      "description": "«Hay una conspiración, Harry Potter. Una conspiración para hacer que este año sucedan las cosas más terribles en el Colegio Hogwarts de Magia y Hechicería.» El verano de Harry Potter ha incluido el peor cumpleaños de su vida, unos presagios muy poco halagüeños por parte de un elfo doméstico llamado Dobby y ser rescatado de casa de los Dursleys por su amigo Ron Weasley en un coche mágico volador. Cuando regresa al Colegio Hogwarts de Magia y Hechicería para cursar su segundo año, Harry escucha susurros extraños por los pasillos vacíos del colegio... Y luego comienzan los ataques. Se encuentran a estudiantes convertidos en piedra... Los terribles presagios de Dobby parecen hacerse realidad. Tema musical compuesto por James Hannigan.",
+      "category": "Juvenile Fiction",
+      "pageCount": 365,
+      "image": "http://books.google.com/books/content?id=zl13g5uRM4EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter Y El Misterio del Príncipe ",
+      "id": "z2hczgEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2021",
+      "description": "Harry Potter y el misterio del príncipe es la sexta novela de la ya clásica serie fantástica de la autora británica J.K. Rowling. Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán del equipo de quidditch, los ensayos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los férreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: «El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida.» El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago contará con un viejo libro de pociones perteneciente a un misterioso personaje, alguien que se hace llamar Príncipe Mestizo. ENGLISH DESCRIPTION Harry Potter and the Half-Blood Prince is the sixth volume of British author J.K. Rowling's now classic series of fantasy novels. At age sixteen, in the midst of serious events plaguing England, Harry begins his sixth year at Hogwarts. Having been chosen captain of the Quidditch team, practices, tests, and girls are keeping him busy, but that peace and tranquility is short-lived. Despite tight security measures that protect the school, two students are brutally attacked. Dumbledore knows that, as proclaimed in the Prophecy, the time is approaching when Harry and Voldemort must face each other in a deadly match: \"The only one with strong enough powers to defeat the Dark Lord is approaching ... One of the two must die at the hands of the other, because neither can live as long as the other is still alive.\" The old Headmaster will enlist Harry's help, and together they will undertake dangerous trips in order to try to weaken the enemy, for this the young wizard will have the help of an old potion book that belonged to a mysterious person, someone who calls himself the Half-Blood Prince.",
+      "category": "Juvenile Fiction",
+      "pageCount": 608,
+      "image": "http://books.google.com/books/content?id=z2hczgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "title": "El nombre del viento (Crónica del asesino de reyes)",
+      "id": "QeYF9kTMypgC",
+      "author": "Patrick Rothfuss",
+      "year": "2011",
+      "description": "Atípica, profunda y sincera, El nombre del viento es una novela de aventuras, de historias dentro de otras historias, de misterio, de amistad, de amor, de magia y de superación. La novela que ha consagrado a Patrick Rothfuss como fenómeno editorial de los últimos años. En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. «Viajé, amé, perdí, confié y me traicionaron.» «He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. »Me llamo Kvothe. Quizá hayas oído hablar de mí.» La crítica ha dicho... «Una estupenda y fuera de lo común novela de aventuras fantásticas.» Justo Navarro, El País «Sin duda El nombre del viento se convertirá en un clásico.» The Times «Un libro para quien conoce el mágico poder de las palabras.» Ricard Ruiz Garzón, El Periódico de Catalunya «Una aventura insólita y preciosa. Puntuación: Sobresaliente.» Manu González, Qué Leer «No sucede a menudo, pero El nombre del viento de Patrick Rothfuss sí es tan bueno como dicen las reseñas.» Locus «Llena de música, magia, amor y pérdida, el absorbente y vivo debut de Patrick Rothfuss nos ha deslumbrado.» Amazon.com «A veces, con suerte y unas cuantas recomendaciones de buenos amigos, se vuelve a descubrir otro paraíso en el que quedarse, un par de semanas, unos cuantos días. Y eso es justo lo que me ha pasado con El nombre del viento.» Toni Rodero, La Voz de Avilés",
+      "category": "Fiction",
+      "pageCount": 880,
+      "image": "http://books.google.com/books/content?id=QeYF9kTMypgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter y el Prisionero de Azkaban. Edición Ravenclaw ",
+      "id": "FX22zQEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2020",
+      "description": "Siempre tendrás una casa en Hogwarts. Edición 20 aniversario de Harry Potter y el prisionero de Azkaban Deja que la clásica saga de J. K. Rowling te lleve de vuelta al Colegio Hogwarts de Magia y Hechicería. Con motivo de la celebración del 20 aniversario de la primera publicación de Harry Potter y el prisionero de Azkaban, estas irresistibles ediciones rinden homenaje al carácter noble de las cuatro casas de Hogwarts. Con nuevas ilustraciones en el interior y un diseño único para las cubiertas, obra de Levi Pinfold, ganador de la Medalla Kate Greenaway, cada uno de los libros contiene material adicional exclusivo que amplía la información sobre cada casa. Una edición única que no puedes perderte si alguna vez te has imaginado sentado bajo el Sombrero Seleccionador en el Gran Comedor de Hogwarts.",
+      "category": "Juvenile Fiction",
+      "pageCount": 416,
+      "image": "http://books.google.com/books/content?id=FX22zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "title": "La música del silencio",
+      "id": "qQkFogEACAAJ",
+      "author": "Patrick Rothfuss",
+      "year": "2014",
+      "category": "Juvenile Nonfiction",
+      "pageCount": 128,
+      "image": "http://books.google.com/books/content?id=qQkFogEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ]
+}

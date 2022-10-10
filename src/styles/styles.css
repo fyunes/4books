@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Monoton&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 .App {
+  font-family: "Barlow Condensed", sans-serif;
   width: 100%;
   min-height: 100vh;
   background: url("/src/assets/images/background.jpg");
@@ -14,11 +17,7 @@ html {
   background-size: cover;
 }
 .book {
-  transition: 0.3s;
-}
-.book:hover {
-  opacity: 1;
-  transform: scale(1.02);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
+/* Provisional CSS*/
