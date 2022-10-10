@@ -31,9 +31,11 @@ const Logo = () => {
     <Box display="flex">
       <Image
         borderRadius="full"
-        boxSize="100px"
+        boxSize="80px"
         src="favicon.ico"
         alt="Logo"
+        mt="3.5%"
+        
       ></Image>
       <Heading
       fontFamily="Barlow Condensed"
@@ -175,7 +177,7 @@ const NavBarContainer = ({ children, ...props }) => {
       align="center"
       justify={["center", "center", "space-between", "space-between"]}
       wrap="wrap"
-      w="95%"
+      w="96%"
       mb={8}
       p={8}
       bg="rgb(89, 53, 29, 0.5)"
