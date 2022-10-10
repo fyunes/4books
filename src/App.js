@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AddBook from "./pages/AddBook";
@@ -14,17 +14,20 @@ import "./styles/styles.css";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Flex direction="column" alignContent="center" className="App">
+      <Flex
+        direction="column"
+        justify="space-between"
+        alignContent="center"
+        className="App"
+      >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home title="Library App" />} />
           <Route path="/library" element={<Library title="My library" />} />
           <Route path="/add-book" element={<AddBook title="Add new book" />} />
 
-          <Route path="/sign-up" element={ <SignUpPage title="Sign Up" /> } />
-          <Route path="/sign-in" element={ <SignInPage title="Sign In" /> } />
-
-
+          <Route path="/sign-up" element={<SignUpPage title="Sign Up" />} />
+          <Route path="/sign-in" element={<SignInPage title="Sign In" />} />
         </Routes>
         <Footer />
       </Flex>
