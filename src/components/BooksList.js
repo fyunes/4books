@@ -7,25 +7,27 @@ const BooksList = () => {
 
   return (
     <Flex
+      bgColor="maroon.op"
       py={5}
       px={2}
       borderWidth={2}
-      borderColor="beige.100"
+      borderColor="orange.100"
       borderRadius={10}
       justifyContent="center"
       alignItems="start"
       wrap="wrap"
       gap={5}
-      w="70%"
+      w={{ base: "90%", sm: "80%", md: "70%" }}
     >
-      {myBooks.map((book) => {
+      {myBooks.slice(0, 16).map((book, index) => {
         return (
           <Book
-            category={book.volumeInfo?.categories[0]}
-            author={book.volumeInfo.authors[0]}
-            image={book.volumeInfo.imageLinks?.thumbnail}
-            key={book.id}
-            title={book.volumeInfo.title}
+            published={book.year}
+            category={book.category}
+            author={book.author}
+            image={book.image}
+            key={index}
+            title={book.title}
           />
         );
       })}
