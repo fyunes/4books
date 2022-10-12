@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AddBook from "./pages/AddBook";
-import SignUpPage from "./components/Form";
-import SignInPage from "./components/SignIn";
+import SignUpPage from "./pages/SignUpPage";
+import SignInPage from "./pages/SignInPage";
 
 import { ChakraProvider, Flex } from "@chakra-ui/react";
 import Library from "./pages/Library";
