@@ -1,46 +1,67 @@
 import React from 'react';
 import {
   FormControl,
-  FormLabel,
-  FormHelperText,
   Input,
   Button,
   Box,
   Center,
+  Flex,
+  VStack,
 } from '@chakra-ui/react';
 
 
 
 const Form = () => {
   return (
-    <Box w='100%' h='100%' p={4} color='white' align="center" >
-      
-      <Center h='100px' color='white' fontSize='22px' fontWeight='700'>
+    
+    <Flex
+      position='relative'
+      w="90%"
+      borderWidth={2}
+      borderColor="orange.100"
+      borderRadius={10}
+      flexDir='column'
+      justify="center"
+      align="center"
+      wrap="wrap"
+      gap={5}      
+      py={9}
+      my={5}
+      mx={3}
+    >
+      <Center color='yellow.100' fontSize='22px' fontWeight='700' zIndex={1}>
         Sign up Form
       </Center>
       
       <form >
-        <FormControl w='80%' align="center" >
-          <FormLabel color='white' mt='15px' >Name</FormLabel>
-          <Input type='text' bg='yellow.100' />
+        <FormControl w='100%' dispay='flex' flexDirection='column' justify='center' align="center" zIndex={1} >
           
-          <FormLabel color='white' mt='15px'>Username</FormLabel>
-          <Input type='text' bg='yellow.100' />
-
-          <FormLabel color='white'mt='15px' >Password</FormLabel>
-          <Input type='password' bg='yellow.100' />
-
-          <FormLabel color='white' mt='15px'>Email address</FormLabel>
-          <Input type='email' bg='yellow.100' />          
-          <FormHelperText color='gray.300'>We'll never share your email.</FormHelperText>
-
-          <Button colorScheme='orange' variant='outline' bg='yellow.100' mt='15px'>
-            Button
-          </Button>
+          <VStack dispay='flex' flexDirection='column' justify='center' align="center" gap={4}>
+            <Input type='text' color="beige.100" bgColor="maroon.op" focusBorderColor="beige.100" borderColor="orange.100" _placeholder={{ color: "yellow.100" }} placeholder="Name" />          
+            
+            <Input type='text' color="beige.100" bgColor="maroon.op" focusBorderColor="beige.100" borderColor="orange.100" _placeholder={{ color: "yellow.100" }} placeholder="Username" />
+            
+            <Input type='password' color="beige.100" bgColor="maroon.op" focusBorderColor="beige.100" borderColor="orange.100" _placeholder={{ color: "yellow.100" }} placeholder="Password" />
+            
+            <Input type='email' color="beige.100" bgColor="maroon.op" focusBorderColor="beige.100" borderColor="orange.100" _placeholder={{ color: "yellow.100" }} placeholder="Email" /> 
+            
+            <Button fontSize="lg" colorScheme="yellow">
+              Sign Up
+            </Button>
+          </VStack>
 
         </FormControl>
       </form>
-    </Box>
+
+      <Box
+        w='100%'
+        h='100%'
+        bg='maroon.op'
+        borderRadius={10}
+        position='absolute'
+        zIndex={0}
+      ></Box>
+    </Flex>
   )
 };
 
