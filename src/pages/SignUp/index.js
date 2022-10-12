@@ -1,16 +1,17 @@
-import React from 'react';
-import { Form } from "react-router-dom";
+import { useEffect } from "react";
+import { Box } from "@chakra-ui/react";
+import Form from "../../components/Form";
 
+const SignUpPage = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  });
 
-const SignUpPage = () => {
   return (
-    <div> 
-      <h2>Sign Up Form</h2>
-      <div>
-        <Form />
-      </div>
-    </div>
-  )
+    <Box justifyContent="center" alignItems="center">
+      <Form />
+    </Box>
+  );
 };
 
 export default SignUpPage;

@@ -189,8 +189,10 @@ const FooterContainer = ({ children }) => {
       justify={["center", "center", "space-evenly", "space-evenly"]}
       flexDirection={["column", "column", "row", "row"]}
       w="100%"
-      bg="rgb(89, 53, 29, 0.5)"
-      borderTop="1px #de834d solid"
+      bg='maroon.op'
+      borderWidth={2}
+      borderColor='orange.100'
+      borderRadius={10}
       p="1%"
     >
       {children}
