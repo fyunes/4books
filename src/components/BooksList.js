@@ -6,6 +6,7 @@ const BooksList = () => {
   const myBooks = useSelector((state) => state.books);
 
   return (
+    myBooks.length &&
     <Flex
       bgColor="maroon.op"
       py={5}
@@ -17,11 +18,12 @@ const BooksList = () => {
       alignItems="start"
       wrap="wrap"
       gap={5}
-      w={{ base: "90%", sm: "80%", md: "60%", lg: '80%' }}
+      w={{ base: "90%", sm: "80%", md: "60%", lg: "80%" }}
     >
       {myBooks.slice(0, 16).map((book, index) => {
         return (
           <Book
+            id={book.id}
             published={book.year}
             category={book.category}
             author={book.author}

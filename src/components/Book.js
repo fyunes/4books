@@ -9,10 +9,13 @@ import {
   Tag,
   VStack,
 } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
 import { EditIcon } from "@chakra-ui/icons";
 import "animate.css";
+import { deleteBook } from "../features/books/booksSlice";
 
-const Book = ({ published, category, author, image, title }) => {
+const Book = ({ published, category, author, image, title, id }) => {
+  const dispatch = useDispatch();
   return (
     <Box
       className="animate__animated animate__bounceInDown"
@@ -56,11 +59,7 @@ const Book = ({ published, category, author, image, title }) => {
         py={2.5}
         bgGradient="linear(to-r, orange.100, beige.100)"
       >
-        <Tooltip
-          placement="top"
-          label={title}
-          hasArrow
-        >
+        <Tooltip placement="top" label={title} hasArrow>
           <Heading
             whiteSpace="nowrap"
             overflow="hidden"
@@ -106,7 +105,14 @@ const Book = ({ published, category, author, image, title }) => {
               {published}
             </Tag>
             <Tooltip label="Edit book info" hasArrow>
-              <Button shadow="md" colorScheme="yellow">
+              <Button
+                onClick={() => {
+                  console.log("this id in delete button", id);
+                  dispatch(deleteBook(id));
+                }}
+                shadow="md"
+                colorScheme="yellow"
+              >
                 <EditIcon />
               </Button>
             </Tooltip>
