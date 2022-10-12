@@ -6,8 +6,8 @@ const Home = ({ title }) => {
     document.title = title;
   });
   return (
-    <Flex direction="column" color="beige.100">
-      Home
+    <Flex justifyContent='center' alignItems='center' direction="column" color="beige.100">
+      <h1>Home</h1>
     </Flex>
   );
 };

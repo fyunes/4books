@@ -17,7 +17,7 @@ const BooksList = () => {
       alignItems="start"
       wrap="wrap"
       gap={5}
-      w={{ base: "90%", sm: "80%", md: "70%" }}
+      w={{ base: "90%", sm: "80%", md: "60%", lg: '80%' }}
     >
       {myBooks.slice(0, 16).map((book, index) => {
         return (

@@ -9,35 +9,51 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { CloseIcon } from "@chakra-ui/icons";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useSelector } from "react-redux";
 
 const BookMenu = () => {
   const myBooks = useSelector((state) => state.books);
 
   const [selectedFilters, setSelectedFilters] = useState({
-    author: ["JK Rowling", "George RR Martin"],
-    category: ["Juvenile Fiction", "Fiction"],
-    year: ["1997"],
+    author: [],
+    category: [],
+    year: [],
   });
 
-  const [availableFilters, setFilters] = useState({
-    authors: [],
-    categories: [],
-    years: [],
+  const [availableFilters, setAvailableFilters] = useState({
+    author: [],
+    category: [],
+    year: [],
   });
 
-  useEffect(() => {
+  const getFilters = useCallback(() => {
     const getUniqueSet = (key) => {
       return [...new Set(myBooks.map((book) => book[key]))].sort();
     };
-    setFilters((availableFilters) => ({
+    setAvailableFilters((availableFilters) => ({
       ...availableFilters,
-      authors: getUniqueSet("author"),
-      categories: getUniqueSet("category"),
-      years: getUniqueSet("year"),
+      author: getUniqueSet("author"),
+      category: getUniqueSet("category"),
+      year: getUniqueSet("year"),
     }));
   }, [myBooks]);
+
+  useEffect(getFilters, [myBooks, getFilters]);
+  //continuar lo de los filtros, algo no funciona bien.
+  const handleFilters = (e) => {
+    setSelectedFilters({
+      ...selectedFilters,
+      [e.target.name]: [...selectedFilters[e.target.name], e.target.value],
+    });
+    const updatedFilters = availableFilters[e.target.name].filter(
+      (element) => element !== e.target.value
+    );
+    setAvailableFilters({
+      ...availableFilters,
+      [e.target.name]: updatedFilters,
+    });
+  };
 
   return (
     <VStack
@@ -50,84 +66,93 @@ const BookMenu = () => {
       borderWidth={2}
       borderRadius={10}
       borderColor="orange.100"
-      width={{ base: "90%", sm: "80%", md: "50%", lg: "25%" }}
+      width={{ base: "90%", sm: "70%", md: "40%", lg: "25%" }}
     >
       <Input
-      focusBorderColor="beige.100"
+        focusBorderColor="beige.100"
         w="80%"
         _placeholder={{ color: "yellow.100" }}
         placeholder="Search..."
       />
-      <HStack wrap="wrap" justifyContent="center" gap={3} p={3}>
-        {selectedFilters.author &&
-          selectedFilters.author.map((author) => {
-            return (
-              <Tag
-                fontSize="1rem"
-                userSelect="none"
-                color="#2c0d0f"
-                bgColor="yellow.300"
-              >
-                {author}
-                <Button
-                  mx={1}
-                  color="maroon.900"
-                  colorScheme="yellow.100"
-                  pl={1}
-                  size="fit-content"
-                >
-                  <CloseIcon w=".5rem" />
-                </Button>
-              </Tag>
-            );
-          })}
-        {selectedFilters.category &&
-          selectedFilters.category.map((category) => {
-            return (
-              <Tag
-                fontSize="1rem"
-                userSelect="none"
-                color="#2c0d0f"
-                bgColor="yellow.300"
-              >
-                {category}
-                <Button
-                  mx={1}
-                  color="maroon.900"
-                  colorScheme="yellow.100"
-                  pl={1}
-                  size="fit-content"
-                >
-                  <CloseIcon ml={1} w=".5rem" />
-                </Button>
-              </Tag>
-            );
-          })}
-        {selectedFilters.year &&
-          selectedFilters.year.map((year) => {
-            return (
-              <Tag
-                fontSize="1rem"
-                userSelect="none"
-                color="#2c0d0f"
-                bgColor="yellow.300"
-              >
-                {year}
-                <Button
-                  mx={1}
-                  color="maroon.900"
-                  colorScheme="yellow.100"
-                  pl={1}
-                  size="fit-content"
-                >
-                  <CloseIcon ml={1} w=".5rem" />
-                </Button>
-              </Tag>
-            );
-          })}
-      </HStack>
+      {(selectedFilters.author.length ||
+        selectedFilters.category.length ||
+        selectedFilters.year.length) && (
+          <HStack wrap="wrap" justifyContent="center" gap={3} p={3}>
+            {selectedFilters.author &&
+              selectedFilters.author.map((author, index) => {
+                return (
+                  <Tag
+                    key={index}
+                    fontSize="1rem"
+                    userSelect="none"
+                    color="#2c0d0f"
+                    bgColor="yellow.300"
+                  >
+                    {author}
+                    <Button
+                      mx={1}
+                      color="maroon.900"
+                      colorScheme="yellow.100"
+                      pl={1}
+                      size="fit-content"
+                    >
+                      <CloseIcon w=".5rem" />
+                    </Button>
+                  </Tag>
+                );
+              })}
+            {selectedFilters.category &&
+              selectedFilters.category.map((category, index) => {
+                return (
+                  <Tag
+                    key={index}
+                    fontSize="1rem"
+                    userSelect="none"
+                    color="#2c0d0f"
+                    bgColor="yellow.300"
+                  >
+                    {category}
+                    <Button
+                      mx={1}
+                      color="maroon.900"
+                      colorScheme="yellow.100"
+                      pl={1}
+                      size="fit-content"
+                    >
+                      <CloseIcon ml={1} w=".5rem" />
+                    </Button>
+                  </Tag>
+                );
+              })}
+            {selectedFilters.year &&
+              selectedFilters.year.map((year, index) => {
+                return (
+                  <Tag
+                    key={index}
+                    fontSize="1rem"
+                    userSelect="none"
+                    color="#2c0d0f"
+                    bgColor="yellow.300"
+                  >
+                    {year}
+                    <Button
+                      mx={1}
+                      color="maroon.900"
+                      colorScheme="yellow.100"
+                      pl={1}
+                      size="fit-content"
+                    >
+                      <CloseIcon ml={1} w=".5rem" />
+                    </Button>
+                  </Tag>
+                );
+              })}
+          </HStack>
+        )}
       <VStack w="80%" spacing={4}>
         <Select
+          onChange={(e) => handleFilters(e)}
+          name="author"
           borderColor="beige.600"
           borderWidth={1}
           color="beige.100"
@@ -136,7 +161,7 @@ const BookMenu = () => {
           colorScheme="black"
           placeholder="Filter by Author"
         >
-          {availableFilters.authors.map((author, index) => (
+          {availableFilters.author.map((author, index) => (
             <option
               style={{ backgroundColor: "#2c0d0f", color: "#ffde95" }}
               value={author}
@@ -147,6 +172,8 @@ const BookMenu = () => {
           ))}
         </Select>
         <Select
+          onChange={(e) => handleFilters(e)}
+          name="category"
           borderColor="beige.600"
           borderWidth={1}
           color="beige.100"
@@ -155,7 +182,7 @@ const BookMenu = () => {
           colorScheme="black"
           placeholder="Filter by Category"
         >
-          {availableFilters.categories.map((category, index) => (
+          {availableFilters.category.map((category, index) => (
             <option
               style={{ backgroundColor: "#2c0d0f", color: "#ffde95" }}
               value={category}
@@ -166,6 +193,8 @@ const BookMenu = () => {
           ))}
         </Select>
         <Select
+          onChange={(e) => handleFilters(e)}
+          name="year"
           borderColor="beige.600"
           borderWidth={1}
           color="beige.100"
@@ -174,7 +203,7 @@ const BookMenu = () => {
           colorScheme="black"
           placeholder="Filter by Year"
         >
-          {availableFilters.years.map((year, index) => (
+          {availableFilters.year.map((year, index) => (
             <option
               style={{ backgroundColor: "#2c0d0f", color: "#ffde95" }}
               value={year}

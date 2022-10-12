@@ -9,7 +9,7 @@ import {
   Tag,
   VStack,
 } from "@chakra-ui/react";
-import { ViewIcon } from "@chakra-ui/icons";
+import { EditIcon } from "@chakra-ui/icons";
 import "animate.css";
 
 const Book = ({ published, category, author, image, title }) => {
@@ -19,7 +19,7 @@ const Book = ({ published, category, author, image, title }) => {
       py={3}
       gap={1}
       shadow="lg"
-      w={{ base: "230px", md: "250px" }}
+      w={{ base: "250px", md: "250px" }}
       h="400px"
       bgColor="brown.900"
       bgGradient="linear(to-r,#826f81ff, #805e4f, #9e6545, #c18459, #d7b699)"
@@ -57,7 +57,6 @@ const Book = ({ published, category, author, image, title }) => {
         bgGradient="linear(to-r, orange.100, beige.100)"
       >
         <Tooltip
-          _colorScheme="beige.500"
           placement="top"
           label={title}
           hasArrow
@@ -106,9 +105,9 @@ const Book = ({ published, category, author, image, title }) => {
             >
               {published}
             </Tag>
-            <Tooltip label="See book details" hasArrow>
+            <Tooltip label="Edit book info" hasArrow>
               <Button shadow="md" colorScheme="yellow">
-                <ViewIcon />
+                <EditIcon />
               </Button>
             </Tooltip>
           </Flex>
