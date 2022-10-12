@@ -1,191 +1,175 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import {
-  Link,
-  Box,
-  Flex,
-  Text,
-  Button,
-  Stack,
-  Image,
-  Heading,
-} from "@chakra-ui/react";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Flex, useDisclosure, Stack, Link, Text } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import Logo from "./Logo";
 
-const NavBar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+const NavBar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <NavBarContainer {...props}>
-      <Logo />
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
-    </NavBarContainer>
-  );
-};
-
-const Logo = () => {
-  return (
-    <Box display="flex">
-      <Image
-        borderRadius="full"
-        boxSize="80px"
-        src="favicon.ico"
-        alt="Logo"
-        mt="3.5%"
-        
-      ></Image>
-      <Heading
-      fontFamily="Barlow Condensed"
-        textAlign="center"
-        marginLeft="10%"
-        p="8%"
-        w="250px"
-        color="beige.100"
-        border="1px #de834d solid"
-        borderRadius="25px"
-      >
-        4Books
-      </Heading>
-    </Box>
-  );
-};
-
-const MenuToggle = ({ toggle, isOpen }) => {
-  return (
-    <Box
-      display={{ base: "block", md: "none" }}
-      marginTop={[4, 4, 0, 0]}
-      onClick={toggle}
-    >
-      {isOpen ? (
-        <CloseIcon color="beige.100" />
-      ) : (
-        <HamburgerIcon color="beige.100" />
-      )}
-    </Box>
-  );
-};
-
-const MenuItem = ({ children, to = "/", ...rest }) => {
-  return (
-    <Link href={to}>
-      <Text display="block" {...rest}>
-        {children}
-      </Text>
-    </Link>
-  );
-};
-
-const MenuLinks = ({ isOpen }) => {
-  return (
-    <Box
-      display={{ base: isOpen ? "block" : "none", md: "block" }}
-      flexBasis={{ base: "100%", md: "auto" }}
-      marginTop={[0, 0, 5, 3]}
-    >
-      <Stack
-        spacing={5}
-        align="center"
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "column", "row", "row"]}
-        pt={[4, 4, 0, 0]}
-      >
-        <MenuItem>
-          <Link as={NavLink} to="/">
-            <Button
-              fontSize="1.2rem"
-              size="md"
-              w="160px"
-              rounded="md"
-              colorScheme="navbar"
-              variant="outline"
-              _active={{
-                bg: "orange.900",
-                borderColor: "orange.900",
-              }}
-            >
-              Home
-            </Button>
-          </Link>
-        </MenuItem>
-        <MenuItem>
-          <Link as={NavLink} to="/library">
-            <Button
-              fontSize="1.2rem"
-              size="md"
-              w="160px"
-              rounded="md"
-              colorScheme="navbar"
-              variant="outline"
-              _active={{
-                bg: "orange.900",
-                borderColor: "orange.900",
-              }}
-            >
-              Library
-            </Button>
-          </Link>
-        </MenuItem>
-        <MenuItem>
-          <Link as={NavLink} to="/sign-in">
-            <Button
-              fontSize="1.2rem"
-              size="md"
-              w="160px"
-              rounded="md"
-              color="maroon.900"
-              colorScheme="sign"
-              _active={{
-                bg: "orange.300",
-                borderColor: "orange.300",
-              }}
-            >
-              Sing in
-            </Button>
-          </Link>
-        </MenuItem>
-        <MenuItem>
-          <Link as={NavLink} to="/sign-up">
-            <Button
-              fontSize="1.2rem"
-              size="md"
-              w="160px"
-              rounded="md"
-              color="maroon.900"
-              colorScheme="sign"
-              _active={{
-                bg: "orange.300",
-                borderColor: "orange.300",
-              }}
-            >
-              Sing up
-            </Button>
-          </Link>
-        </MenuItem>
-      </Stack>
-    </Box>
-  );
-};
-
-const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
-      as="nav"
-      align="center"
-      justify={["center", "center", "space-between", "space-between"]}
-      wrap="wrap"
-      w="96%"
-      mb={8}
-      p={8}
-      bg="rgb(89, 53, 29, 0.5)"
-      m="2%"
-      border="1px #de834d solid"
-      {...props}
+      px={10}
+      py={7}
+      gap={5}
+      direction={{ base: "column", md: "row" }}
+      justifyContent={{ base: "center", md: "space-between" }}
+      alignItems={{ base: "center", sm: "center" }}
+      bg="maroon.op"
+      borderRadius={10}
+      borderWidth={2}
+      borderColor="orange.100"
     >
-      {children}
+      {/* LOGO & TITLE */}
+
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        align="center"
+        justify="center"
+        gap={5}
+      >
+        <Flex flexGrow={1} justify="center">
+          <Logo />
+        </Flex>
+        {isOpen ? (
+          <CloseIcon
+            onClick={isOpen ? onClose : onOpen}
+            display={{ base: "inline", sm: "none" }}
+            color="beige.100"
+            m={2}
+          />
+        ) : (
+          <HamburgerIcon
+            color="beige.100"
+            onClick={isOpen ? onClose : onOpen}
+            display={{ base: "inline", sm: "none" }}
+            m={2}
+          />
+        )}
+      </Flex>
+
+      {/* LINKS */}
+
+      <Flex
+        w={{ base: "90%", sm: "100%", md: "60%", lg: "76%" }}
+        p={{ base: 1, md: 5 }}
+        alignItems={{ base: "center" }}
+        direction={{ base: "column", sm: "row" }}
+        justifyContent={{ base: "space-between" }}
+        gap={{ base: 7 }}
+        display={{ base: isOpen ? "flex" : "none", sm: "flex" }}
+      >
+        <Stack
+          spacing={{ base: 1, sm: 5 }}
+          direction={{ base: "column", sm: "row" }}
+        >
+          <Link
+            style={{ textDecoration: "none" }}
+            variant="outline"
+            color="beige.100"
+            as={RouterLink}
+            to="/"
+          >
+            <Text
+              _hover={{
+                bg: "#ecc94b",
+                color: "maroon.900",
+                borderColor: "#ecc94b",
+                transition: ".5s",
+              }}
+              transition=".3s"
+              fontSize="1.3rem"
+              py={3}
+              px={5}
+              borderRadius={10}
+              borderWidth={2}
+              borderColor="orange.100"
+            >
+              Home
+            </Text>
+          </Link>
+          <Link
+            style={{ textDecoration: "none" }}
+            color="beige.100"
+            as={RouterLink}
+            to="/library"
+          >
+            <Text
+              _hover={{
+                bg: "#ecc94b",
+                color: "maroon.900",
+                borderColor: "#ecc94b",
+                transition: ".5s",
+              }}
+              transition=".3s"
+              fontSize="1.3rem"
+              py={3}
+              px={5}
+              borderRadius={10}
+              borderWidth={2}
+              borderColor="orange.100"
+            >
+              Library
+            </Text>
+          </Link>
+        </Stack>
+        <Stack
+          spacing={{ base: 1, sm: 7 }}
+          direction={{ base: "column", sm: "row" }}
+        >
+          <Link
+            style={{ textDecoration: "none" }}
+            color="beige.100"
+            as={RouterLink}
+            to="/sign-in"
+          >
+            <Text
+              _hover={{
+                boxShadow: "0 0 2px 1px #ecc94b",
+                bg: "maroon.900",
+                color: "#ecc94b",
+                transition: ".5s",
+              }}
+              transition=".3s"
+              whiteSpace="nowrap"
+              fontSize="1.3rem"
+              fontWeight="600"
+              py={1}
+              px={4}
+              bg="#ecc94b"
+              color="black"
+              borderRadius={10}
+            >
+              Sign In
+            </Text>
+          </Link>
+          <Link
+            style={{ textDecoration: "none" }}
+            color="beige.100"
+            as={RouterLink}
+            to="/sign-up"
+          >
+            <Text
+              _hover={{
+                boxShadow: "0 0 2px 1px #ecc94b",
+                bg: "maroon.900",
+                color: "#ecc94b",
+                transition: ".5s",
+              }}
+              transition=".3s"
+              whiteSpace="nowrap"
+              fontSize="1.3rem"
+              fontWeight="600"
+              py={1}
+              px={4}
+              bg="#ecc94b"
+              color="maroon.900"
+              borderRadius={10}
+            >
+              Sign Up
+            </Text>
+          </Link>
+        </Stack>
+      </Flex>
     </Flex>
   );
 };

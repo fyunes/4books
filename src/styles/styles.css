@@ -13,8 +13,7 @@ html {
   width: 100%;
   min-height: 100vh;
   background: url("/src/assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: fixed;
 }
 .book {
   transition: 0.5s;

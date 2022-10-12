@@ -21,13 +21,10 @@ const Library = ({ title }) => {
         display="flex"
         flexDirection={{ base: "column", md: "row" }}
         alignItems={{ base: "center", md: 'start' }}
-        justifyContent="center"
+        justifyContent={{base: 'center', md:'space-between'}}
         py={5}
-        px={3}
         w="100%"
-        // borderColor='white'
-        // borderWidth={2}
-        gap={2}
+        gap={5}
         borderRadius={20}
       >
         <BooksMenu />
