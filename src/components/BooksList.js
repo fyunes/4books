@@ -30,6 +30,8 @@ const BooksList = () => {
             image={book.image}
             key={index}
             title={book.title}
+            description={book.description}
+            pages={book.pageCount}
           />
         );
       })}
