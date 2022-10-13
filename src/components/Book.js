@@ -8,16 +8,22 @@ import {
   Tooltip,
   Tag,
   VStack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { EditIcon } from "@chakra-ui/icons";
 import "animate.css";
 import { deleteBook } from "../features/books/booksSlice";
+import BookDetails from "./BookDetails";
 
-const Book = ({ published, category, author, image, title, id }) => {
+const Book = ({ published, category, author, image, title, id, description, pages }) => {
   const dispatch = useDispatch();
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
+    <>
     <Box
+      onClick={onOpen}
+      onClose={onClose}
       className="animate__animated animate__bounceInDown"
       py={3}
       gap={1}
@@ -120,6 +126,8 @@ const Book = ({ published, category, author, image, title, id }) => {
         </VStack>
       </HStack>
     </Box>
+    <BookDetails pages={pages} description={description} title={title} category={category} author={author} published={published} id={id} image={image} isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
+    </>
   );
 };
 
