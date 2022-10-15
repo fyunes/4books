@@ -31,6 +31,7 @@ const Form = () => {
       <Center color='yellow.100' fontSize='22px' fontWeight='700' zIndex={1}>
         Sign up Form
       </Center>
+      
       <Box w='90%'>
         <form >
           <FormControl align='center' w='100%' zIndex={1}>
