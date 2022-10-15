@@ -8,27 +8,18 @@ import {
   Flex,
   VStack,
   Stack,
-  Image,
   Text,
 } from '@chakra-ui/react';
 
-/* const googleIcon = () => (
-  
-  <svg 
-    version="1.1" id="Capa_1" 
-    xmlns="http://www.w3.org/2000/svg" 
-    x="0px" y="0px"
-    width="24px"
-    height="24px"
-    viewBox="0 0 24 24"
-    >
-    <path fill='#F9DE95' d="M50.4,4.1C25,4.1,4.5,24.6,4.5,50c0,25.3,20.5,45.9,45.9,45.9c25.3,0,45.9-20.5,45.9-45.9
-    C96.3,24.6,75.7,4.1,50.4,4.1z M37.9,69.9C26.9,69.9,18,61,18,50c0-11,8.9-19.9,19.9-19.9c5.5,0,10.4,2.2,14,5.7l-4.1,3.5
-    c-2.6-2.4-6.1-3.9-9.9-3.9c-8,0-14.5,6.5-14.5,14.5c0,8,6.5,14.5,14.5,14.5c6.1,0,10.7-4,12.2-10.4H37.6l0-5.3h18.5l0,2.1
-    C56.2,61.8,48.5,69.9,37.9,69.9z M82.8,53.9h-7.7v7.7h-4.9v-7.7h-7.7V49h7.7v-7.7h4.9V49h7.7V53.9z"
-    />
-  </svg>
-); */
+const GoogleIcon = () => (  
+  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="-2 -2 24 24" preserveAspectRatio="xMinYMin" class="jam jam-google-circle"><path d="M7.188 9.034a2.972 2.972 0 0 0 .028 2.01 2.973 2.973 0 0 0 4.285 1.522 2.98 2.98 0 0 0 1.283-1.522H10.11V9.066h4.803a5.005 5.005 0 0 1-1.783 4.833A5 5 0 1 1 10 5c1.213.001 2.326.433 3.191 1.152l-1.62 1.326a2.974 2.974 0 0 0-4.384 1.557h.001z"/><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"/></svg>
+);
+const FacebookIcon = () => (  
+  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="-2 -2 24 24" preserveAspectRatio="xMinYMin" class="jam jam-facebook-circle"><path d="M8.695 6.937v1.377H7.687v1.683h1.008V15h2.072V9.997h1.39s.131-.807.194-1.69h-1.576v-1.15c0-.173.226-.404.45-.404h1.128V5h-1.535C8.644 5 8.695 6.685 8.695 6.937z"/><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"/></svg>
+);
+const LinkedInIcon = () => (  
+  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="-2 -2 24 24" preserveAspectRatio="xMinYMin" class="jam jam-linkedin-circle"><path d="M15 11.13v3.697h-2.143v-3.45c0-.866-.31-1.457-1.086-1.457-.592 0-.945.398-1.1.784-.056.138-.071.33-.071.522v3.601H8.456s.029-5.842 0-6.447H10.6v.913l-.014.021h.014v-.02c.285-.44.793-1.066 1.932-1.066 1.41 0 2.468.922 2.468 2.902zM6.213 5.271C5.48 5.271 5 5.753 5 6.385c0 .62.466 1.115 1.185 1.115h.014c.748 0 1.213-.496 1.213-1.115-.014-.632-.465-1.114-1.199-1.114zm-1.086 9.556h2.144V8.38H5.127v6.447z"/><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"/></svg>
+);
 
 const SignIn = () => {
   return (
@@ -116,25 +107,42 @@ const SignIn = () => {
               bg='yellow.100' 
               display='flex' 
               justify='flex-start'>
-              <Image w='30%' src='../assets/images/face_icon.png' /> 
+              <Box w='30%'>
+                <GoogleIcon />
+              </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
                 with Google
               </Text>
             </Button>
-
-            <Button w='100%' fontSize="lg" bg='yellow.100' >
-              <Image w='30%' src='../assets/images/face_icon.png'/> 
+            
+            <Button 
+              w='100%' 
+              fontSize="lg" 
+              bg='yellow.100' 
+              display='flex' 
+              justify='flex-start'>
+              <Box w='30%'>
+                <FacebookIcon />
+              </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
                 with Facebook
               </Text>
             </Button>
 
-            <Button w='100%' fontSize="lg" bg='yellow.100'>
-              <Image w='30%' src='../assets/images/face_icon.png' /> 
+            <Button 
+              w='100%' 
+              fontSize="lg" 
+              bg='yellow.100' 
+              display='flex' 
+              justify='flex-start'>
+              <Box w='30%'>
+                <LinkedInIcon />
+              </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
                 with LinkedIn
               </Text>
             </Button>
+            
           </Stack>
         </Flex>
       </Flex>
