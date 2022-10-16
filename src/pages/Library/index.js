@@ -1,34 +1,45 @@
 import BooksList from "../../components/BooksList";
 import BooksMenu from "../../components/BookMenu";
 import { Box } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const Library = ({ title }) => {
+  const myBooks = useSelector((state) => state.books);
+  const [searchResults, setSearchResults] = useState(myBooks);
+  const [deletedBooks, setDeletedBooks] = useState([]);
+
   useEffect(() => {
     document.title = title;
   });
-
   return (
     <Box
       w="100%"
       alignItems="center"
       justifyContent="center"
       direction="column"
-      // borderWidth={2}
-      // borderColor='red'
     >
       <Box
         display="flex"
         flexDirection={{ base: "column", md: "row" }}
-        alignItems={{ base: "center", md: 'start' }}
-        justifyContent={{base: 'center', md:'space-between'}}
+        alignItems={{ base: "center", md: "start" }}
+        justifyContent={{ base: "center", md: "space-between" }}
         py={5}
         w="100%"
         gap={5}
         borderRadius={20}
       >
-        <BooksMenu />
-        <BooksList />
+        <BooksMenu
+          deletedBooks={deletedBooks}
+          searchResults={searchResults}
+          setSearchResults={setSearchResults}
+        />
+        <BooksList
+          deletedBooks={deletedBooks}
+          setDeletedBooks={setDeletedBooks}
+          searchResults={searchResults}
+          setSearchResults={setSearchResults}
+        />
       </Box>
     </Box>
   );

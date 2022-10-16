@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <Flex
       px={10}
-      py={7}
+      py={5}
       gap={5}
       direction={{ base: "column", md: "row" }}
       justifyContent={{ base: "center", md: "space-between" }}
