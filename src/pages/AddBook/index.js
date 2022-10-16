@@ -8,16 +8,56 @@ import {
   VStack,
   Textarea,
 } from "@chakra-ui/react";
-
+import { useSelector, useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
+import { addBook } from "../../features/books/booksSlice";
+import items from "../../assets/myBooks.json";
+import { v4 as uuid } from "uuid";
 
 const AddBook = () => {
 
-const getImage = (e) => {
-  const cover = e.target.value;
-  console.log(cover);
+  const [books, setBook] = useState({
+    title: "",
+    author: "",
+    year:"",
+    category:"",
+    image:"",
+    description: "",
+});
+  
+
+
+
+
+const handleChange = e => {
+    setBook({
+        ...books,
+        [e.target.name] : e.target.value,    })
+        
 }
 
+const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(addBook({
+        ...books,
+        id: uuid(),              
+    }))
+    
+}
+console.log(books)
+const dispatch = useDispatch()
+
+// const getImage = (e) => {
+//   const cover = e.target.value;
+//   console.log(cover);
+//  }
+
+
   return (
+   
+
+
+
     <Flex w="100%" justify="center" align="center">
       <Flex
         position="relative"
@@ -38,8 +78,8 @@ const getImage = (e) => {
         </Center>
 
         <Box w="90%">
-          <form>
-            <FormControl align="center" w="100%" zIndex={1}>
+          <form onSubmit={handleSubmit}>
+            <FormControl align="center" w="100%" zIndex={1} >
               <VStack
                 w="80%"
                 dispay="flex"
@@ -58,6 +98,8 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Title"
+                  onChange={handleChange}
+                  value={books.title}
                 />
                 <Input
                   id="author"
@@ -69,6 +111,8 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Author"
+                  onChange={handleChange}
+                  value={books.author}
                 />
                 <Input
                   id="year"
@@ -80,6 +124,8 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Year it was published"
+                  onChange={handleChange}
+                  value={books.year}
                 />
                 <Input
                   id="category"
@@ -91,6 +137,8 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Category"
+                  onChange={handleChange}
+                  value={books.category}
                 />
 
                 <Input
@@ -103,9 +151,11 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Cover's URL"
+                  onChange={handleChange}
+                  value={books.image}
                 />
 
-                <form
+                {/* <form
                   action="https://www.google.com/"
                   method="get"
                   target="_blank"
@@ -131,7 +181,7 @@ const getImage = (e) => {
                   >
                     Search
                   </Button>
-                </form>
+                </form> */}
                 <Textarea
                   id="description"
                   color="beige.100"
@@ -140,12 +190,15 @@ const getImage = (e) => {
                   borderColor="orange.100"
                   _placeholder={{ color: "yellow.100" }}
                   placeholder="Brief description of the book"
+                  onChange={handleChange}
+                  value={books.description}
                 />
-                <Button w="sm" fontSize="lg" colorScheme="yellow">
+                <Button type="submit" w="sm" fontSize="lg" colorScheme="yellow">
                   Submit
                 </Button>
+                
               </VStack>
-            </FormControl>
+            </FormControl>            
           </form>
         </Box>
 
@@ -159,7 +212,10 @@ const getImage = (e) => {
         ></Box>
       </Flex>
     </Flex>
-  );
-};
+  
+
+  )
+}
+
 
 export default AddBook;
