@@ -40,9 +40,7 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
     if (parcialResults.length <= 0) setSearchResults(JSONbooks);
     else setSearchResults(parcialResults);
     setSearchResults(books);
-  }, [selectedFilters, myBooks]);
-
-
+  }, [selectedFilters, myBooks, JSONbooks, setSearchResults]);
 
   const handleSelectFilter = (e, key) => {
     setSelectedFilters([...selectedFilters, e.target.value]);
