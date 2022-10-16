@@ -10,15 +10,25 @@ const booksSlice = createSlice({
     addBook: (state, action) => {
       state.push(action.payload);
     },
-    deleteBook: (state, action) => {
-      console.log('this is inside deleteBook');
-      console.log('this is state', current(state));
-      console.log('this is payload', action.payload);
-      return state.filter((book) => book.id !== action.payload);
-    },
+    deleteBook: (state, action) =>
+      state.filter((book) => book.id !== action.payload),
     updateBook: (state, action) => {},
+    searchBooks: (state, action) => {
+      return action.payload;
+    },
+    showAll: (state, action) => {
+      const deletedBooks = action.payload;
+      const newState = deletedBooks.length
+        ? items.books.filter((book) => {
+            if (!deletedBooks.includes(book.id)) return book;
+            else return null;
+          })
+        : items.books;
+      return newState;
+    },
   },
 });
 
-export const { addBook, deleteBook, updateBook } = booksSlice.actions;
+export const { addBook, deleteBook, updateBook, searchBooks, showAll } =
+  booksSlice.actions;
 export default booksSlice.reducer;

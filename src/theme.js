@@ -7,7 +7,7 @@ const theme = extendTheme({
   },
   colors: {
     maroon: {
-      op: "rgba(34, 12, 15, 0.5)",
+      op: "rgba(34, 12, 15, 0.6)",
       100: "#e3606b",
       300: "#b4404e",
       600: "#8f2a36",
