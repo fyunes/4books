@@ -1,13 +1,17 @@
-import React from "react";
+import { useEffect } from "react";
+import { Flex } from "@chakra-ui/react";
 import SignIn from "../../components/SignIn";
 
-const SignInPage = () => {
-  return(
-    <div>
-      <h1>Sign In Page</h1>
+const SignInPage = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  });
+
+  return (
+    <Flex justify="center" align="center">
       <SignIn />
-      </div>
-  ) 
+    </Flex>
+  );
 };
 
 export default SignInPage;
