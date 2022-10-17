@@ -9,13 +9,12 @@ import {
 } from "chakra-framer-carousel";
 
 const images = [
-  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862320738334/White_Fang.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031451136768606239/Landing_msg.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861393797130/Gardens_of_the_moon.jpg",
   "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861737734144/Star_Wars_Bloodline.jpg",
   "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862035525662/The_name_of_the_wind.jpg",
-  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861393797130/Gardens_of_the_moon.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862320738334/White_Fang.jpg",
 ];
-
-
 
 function Card({ image, index }) {
   const { onClickHandler, position } = useCarouselItem();
@@ -24,8 +23,8 @@ function Card({ image, index }) {
     <Flex
       h={
         isCenter
-          ? { base: "300px", md: "400px", xl: "450px" }
-          : { base: "280px", md: "320px", xl: "400px" }
+          ? { base: "300px", md: "400px", xl: "470px" }
+          : { base: "280px", md: "320px", xl: "420px" }
       }
       w={
         isCenter
@@ -39,8 +38,8 @@ function Card({ image, index }) {
       <Image
         h={
           isCenter
-            ? { base: "300px", md: "400px", xl: "450px" }
-            : { base: "280px", md: "320px", xl: "400px" }
+            ? { base: "300px", md: "400px", xl: "470px" }
+            : { base: "280px", md: "320px", xl: "420px" }
         }
         w={
           isCenter

@@ -7,54 +7,60 @@ import {
   Flex,
   VStack,
   Textarea,
-  useToast
+  useToast,
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { addBook, updateBook } from "../../features/books/booksSlice";
 import { v4 as uuid } from "uuid";
 import { useParams } from "react-router-dom";
 
-const AddBook = () => {
+const AddBook = ({ title }) => {
+  const params = useParams();
 
-  const params = useParams()
+  useEffect(() => {
+    document.title = title;
+  });
   const [books, setBook] = useState({
     title: "",
     author: "",
-    year:"",
-    category:"",
-    image:"",
+    year: "",
+    category: "",
+    image: "",
     description: "",
-});
+  });
 
-const toast = useToast();
-const handleChange = e => {
+  const toast = useToast();
+  const handleChange = (e) => {
     setBook({
-        ...books,
-        [e.target.name] : e.target.value, })
-        
-}
+      ...books,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setBook({...books,
+    setBook({
+      ...books,
       title: "",
       author: "",
-      year:"",
-      category:"",
-      image:"",
-      description: "",})
-      if (params.id) {
-        dispatch(updateBook(books))
-      }      
-    dispatch(addBook({
+      year: "",
+      category: "",
+      image: "",
+      description: "",
+    });
+    if (params.id) {
+      dispatch(updateBook(books));
+    }
+    dispatch(
+      addBook({
         ...books,
-        id: uuid(),              
-    }));   
-   
-}
-console.log(books)
-const dispatch = useDispatch()
+        id: uuid(),
+      })
+    );
+  };
+  console.log(books);
+  const dispatch = useDispatch();
 
   return (
     <Flex w="100%" justify="center" align="center">
@@ -170,20 +176,25 @@ const dispatch = useDispatch()
                   onChange={handleChange}
                   value={books.description}
                 ></Textarea>
-                    <Button onSubmit={handleSubmit} type="submit" w="sm" fontSize="lg" colorScheme="yellow"
-                onClick={(e) => {
-                  e.stopPropagation();                  
-                  toast({                    
-                    description: "New book added to your library",
-                    status: "success",
-                    duration: 3000,
-                    isClosable: true,
-                    position: "top-right",
-                  });
-                }}>
+                <Button
+                  onSubmit={handleSubmit}
+                  type="submit"
+                  w="sm"
+                  fontSize="lg"
+                  colorScheme="yellow"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toast({
+                      description: "New book added to your library",
+                      status: "success",
+                      duration: 3000,
+                      isClosable: true,
+                      position: "top-right",
+                    });
+                  }}
+                >
                   Submit
                 </Button>
-                
               </VStack>
             </FormControl>
           </form>
@@ -200,7 +211,6 @@ const dispatch = useDispatch()
       </Flex>
     </Flex>
   );
-}
-
+};
 
 export default AddBook;

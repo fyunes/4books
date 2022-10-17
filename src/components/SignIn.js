@@ -109,6 +109,7 @@ const SignIn = () => {
               mt='0.5rem'
               display='flex'
               align='center'
+              colorScheme='yellow'
               justify={{base:'center', md:'flex-start'}}>              
               <Box w={{ base:'60%', md:'30%'}}>
                 <GoogleIcon />
@@ -125,6 +126,7 @@ const SignIn = () => {
               p={0}
               display='flex'
               align='center'
+              colorScheme='yellow'
               justify={{base:'center', md:'flex-start'}}>              
               <Box w={{ base:'60%', md:'30%'}}>
                 <FacebookIcon />
@@ -141,6 +143,7 @@ const SignIn = () => {
               p={0}
               display='flex'
               align='center'
+              colorScheme='yellow'
               justify={{base:'center', md:'flex-start'}}>              
               <Box w={{ base:'60%', md:'30%'}}>
                 <LinkedInIcon />
