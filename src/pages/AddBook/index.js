@@ -74,11 +74,12 @@ const AddBook = ({ title }) => {
         justify="center"
         align="center"
         wrap="wrap"
+        fontFamily="Barlow Condensed, sans-serif"
         gap={5}
         py={9}
         my={5}
       >
-        <Center color="beige.600" fontSize="22px" fontWeight="700" zIndex={1}>
+        <Center color="beige.100" fontSize="28px" fontWeight="700" zIndex={1}>
           Add new book
         </Center>
 
@@ -99,6 +100,7 @@ const AddBook = ({ title }) => {
                   type="text"
                   color="beige.100"
                   bgColor="maroon.op"
+                  fontFamily="Verdana"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
                   _placeholder={{ color: "beige.600" }}
@@ -113,6 +115,7 @@ const AddBook = ({ title }) => {
                   type="text"
                   color="beige.100"
                   bgColor="maroon.op"
+                  fontFamily="Verdana"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
                   _placeholder={{ color: "beige.600" }}
@@ -127,6 +130,7 @@ const AddBook = ({ title }) => {
                   type="number"
                   color="beige.100"
                   bgColor="maroon.op"
+                  fontFamily="Verdana"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
                   _placeholder={{ color: "beige.600" }}
@@ -141,6 +145,7 @@ const AddBook = ({ title }) => {
                   type="text"
                   color="beige.100"
                   bgColor="maroon.op"
+                  fontFamily="Verdana"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
                   _placeholder={{ color: "beige.600" }}
@@ -155,6 +160,7 @@ const AddBook = ({ title }) => {
                   type="url"
                   color="beige.100"
                   bgColor="maroon.op"
+                  fontFamily="Verdana"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
                   _placeholder={{ color: "beige.600" }}
@@ -170,6 +176,7 @@ const AddBook = ({ title }) => {
                   bgColor="maroon.op"
                   focusBorderColor="beige.100"
                   borderColor="orange.100"
+                  fontFamily="Verdana"
                   _placeholder={{ color: "beige.600" }}
                   letterSpacing="0.25ch"
                   placeholder="Brief description of the book"
@@ -179,7 +186,7 @@ const AddBook = ({ title }) => {
                 <Button
                   onSubmit={handleSubmit}
                   type="submit"
-                  w="sm"
+                  w={{ base: "70%", sm: "60%", md: "70%", lg: "80%" }}
                   fontSize="lg"
                   colorScheme="yellow"
                   onClick={(e) => {

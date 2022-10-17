@@ -35,7 +35,14 @@ const Book = ({
 
   return (
     <>
-      <Tooltip placement="top" label="Edit book info" hasArrow>
+      <Tooltip
+        placement="top"
+        label="Edit book info"
+        bg="beige.100"
+        color="brown.900"
+        fontSize="md"
+        hasArrow
+      >
         <Box
           onClick={onOpen}
           onClose={onClose}
@@ -80,7 +87,13 @@ const Book = ({
             py={2.5}
             bgGradient="linear(to-r, orange.100, beige.100)"
           >
-            <Tooltip placement="top" label={title} hasArrow>
+            <Tooltip
+              placement="top"
+              label={title}
+              bg="beige.100"
+              color="brown.900"
+              hasArrow
+            >
               <Heading
                 whiteSpace="nowrap"
                 overflow="hidden"
@@ -125,7 +138,12 @@ const Book = ({
                 >
                   {published}
                 </Tag>
-                <Tooltip label="Delete book" hasArrow>
+                <Tooltip
+                  label="Delete book"
+                  bg="beige.100"
+                  color="brown.900"
+                  hasArrow
+                >
                   <Button
                     onClick={(e) => {
                       e.stopPropagation();
