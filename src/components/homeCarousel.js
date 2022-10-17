@@ -1,4 +1,4 @@
-import { Flex, Button, HStack, Image } from "@chakra-ui/react";
+import { Flex, Button, HStack, Image, Tooltip} from "@chakra-ui/react";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import {
   Carousel,
@@ -60,20 +60,24 @@ function Toolbar() {
   return (
     <Flex w="full" justify="center">
       <HStack>
+        <Tooltip placement="bottom" label="Previous" bg="brown.900" hasArrow>
+          <Button
+            colorScheme="yellow"
+            w={{ base: "40px", sm: "55px", md: "65px" }}
+            onClick={onNext}
+          >
+            <ArrowBackIcon />
+          </Button>
+        </Tooltip>
+        <Tooltip placement="bottom" label="Next" bg="brown.900" hasArrow>
         <Button
           colorScheme="yellow"
           w={{ base: "40px", sm: "55px", md: "65px" }}
           onClick={onPrevious}
         >
-          <ArrowBackIcon />
-        </Button>
-        <Button
-          colorScheme="yellow"
-          w={{ base: "40px", sm: "55px", md: "65px" }}
-          onClick={onNext}
-        >
           <ArrowForwardIcon />
         </Button>
+        </Tooltip>
       </HStack>
     </Flex>
   );

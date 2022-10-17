@@ -9,6 +9,7 @@ import {
   EditablePreview,
   EditableInput,
   EditableTextarea,
+  Center
 } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { updateBook } from "../features/books/booksSlice";
@@ -41,7 +42,7 @@ const BookEdit = ({ title }) => {
         color="beige.100"
         p={5}
         my={5}
-        w={{ base: "100%", lg: "40%" }}
+        w={{ base: "85%", md: "70%", lg: "50%" }}
         borderWidth={2}
         borderColor="orange.100"
         bgColor="maroon.op"
@@ -50,8 +51,19 @@ const BookEdit = ({ title }) => {
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
+        gap={5}
       >
-        <Editable colorScheme="yellow" defaultValue={book.title}>
+        <Center color="beige.100" fontSize={{base: "35px", lg: "30"}} fontWeight="700" zIndex={1}>
+          Edit book
+        </Center>
+        <Editable
+          width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+          defaultValue={book.title}
+        >
           <Input
             onChange={(e) => {
               setBookData({ ...bookData, title: e.target.value });
@@ -60,7 +72,14 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
-        <Editable defaultValue={book.author}>
+        <Editable
+          width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+          defaultValue={book.author}
+        >
           <Input
             onChange={(e) => {
               setBookData({ ...bookData, author: e.target.value });
@@ -69,7 +88,14 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
-        <Editable defaultValue={book.category}>
+        <Editable
+          width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+          defaultValue={book.category}
+        >
           <Input
             onChange={(e) => {
               setBookData({ ...bookData, category: e.target.value });
@@ -78,7 +104,15 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
-        <Editable defaultValue={book.year}>
+        <Editable
+          width={{ base: "40%", sm: "30%", md: "30%", lg: "15%" }}
+          textAlign="center"
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+          defaultValue={book.year}
+        >
           <Input
             onChange={(e) => {
               setBookData({ ...bookData, year: e.target.value });
@@ -87,7 +121,16 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
-        <Editable defaultValue={book.image}>
+        <Editable
+          width={{ base: "100%", sm: "70%", md: "80%", lg: "55%" }}
+          defaultValue={book.image}
+          textOverflow="ellipsis"
+          noOfLines={{ base: 3, lg: 8 }}
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+        >
           <Input
             onChange={(e) => {
               setBookData({ ...bookData, image: e.target.value });
@@ -96,7 +139,14 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
-        <Editable defaultValue={book.description}>
+        <Editable
+          width={{ base: "100%", sm: "70%", md: "80%", lg: "55%" }}
+          borderWidth={1}
+          borderRadius={10}
+          p={2}
+          borderColor="orange.100"
+          defaultValue={book.description}
+        >
           <EditableTextarea
             onChange={(e) => {
               setBookData({ ...bookData, description: e.target.value });

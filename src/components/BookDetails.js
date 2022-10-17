@@ -34,7 +34,7 @@ const BookDetails = ({
         isCentered
         isOpen={isOpen}
         onClose={onClose}
-        size={{ base: "sm", md: "xl", lg: "5xl" }}
+        size={{ base: "xs", md: "lg", lg: "5xl" }}
       >
         <ModalOverlay />
         <ModalContent>
@@ -57,7 +57,7 @@ const BookDetails = ({
               <Box
                 display="flex"
                 justifyContent="center"
-                w={{ base: "70%", md: "30%" }}
+                w={{ base: "60%", md: "40%", lg: "30%" }}
                 mt={2}
                 borderRadius="lg"
                 borderWidth={1}
