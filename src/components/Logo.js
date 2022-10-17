@@ -1,4 +1,4 @@
-import { Box, Heading, Image } from "@chakra-ui/react";
+import { Box, Image, Img } from "@chakra-ui/react";
 
 const Logo = () => {
   return (
@@ -6,10 +6,16 @@ const Logo = () => {
       <Image
         borderRadius="full"
         boxSize="70px"
-        src="favicon.ico"
+        src="https://media.discordapp.net/attachments/997992289425182791/1031176706343587840/logo_colors.png?width=468&height=468"
         alt="Logo"
       ></Image>
-      <Heading
+      <Img
+        w='200px'
+        h='auto'
+        src="https://media.discordapp.net/attachments/997992289425182791/1031177404992991242/logotipo-4b.mixto.png"
+        alt="Name App"
+      ></Img>
+      {/* <Heading
         fontFamily="Barlow Condensed"
         textAlign="center"
         as="h1"
@@ -23,7 +29,7 @@ const Logo = () => {
         borderBottomLeftRadius={50}
       >
         4Books
-      </Heading>
+      </Heading> */}
     </Box>
   );
 };

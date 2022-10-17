@@ -98,16 +98,19 @@ const SignIn = () => {
             flexDir={{base:'row', md:'column'}}
             align='center'
             justify='space-around' 
-            w={{ base:'80%', md:'80%'}}
+            w={{ base:'60%', md:'80%'}}
             gap={4}
           > 
             <Button 
-              w='100%' 
+              w={{ base:'0', md:'100%'}}
               fontSize="lg" 
-              bg='yellow.100' 
-              display='flex' 
-              justify='flex-start'>
-              <Box w='30%'>
+              bg={{ base:'beige.100', md:'beige.100' }}
+              p={0}
+              mt='0.5rem'
+              display='flex'
+              align='center'
+              justify={{base:'center', md:'flex-start'}}>              
+              <Box w={{ base:'60%', md:'30%'}}>
                 <GoogleIcon />
               </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
@@ -116,12 +119,14 @@ const SignIn = () => {
             </Button>
             
             <Button 
-              w='100%' 
+              w={{ base:'0', md:'100%'}}
               fontSize="lg" 
-              bg='yellow.100' 
-              display='flex' 
-              justify='flex-start'>
-              <Box w='30%'>
+              bg={{ base:'beige.100', md:'beige.100' }}
+              p={0}
+              display='flex'
+              align='center'
+              justify={{base:'center', md:'flex-start'}}>              
+              <Box w={{ base:'60%', md:'30%'}}>
                 <FacebookIcon />
               </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
@@ -130,12 +135,14 @@ const SignIn = () => {
             </Button>
 
             <Button 
-              w='100%' 
+              w={{ base:'0', md:'100%'}}
               fontSize="lg" 
-              bg='yellow.100' 
-              display='flex' 
-              justify='flex-start'>
-              <Box w='30%'>
+              bg={{ base:'beige.100', md:'beige.100' }}
+              p={0}
+              display='flex'
+              align='center'
+              justify={{base:'center', md:'flex-start'}}>              
+              <Box w={{ base:'60%', md:'30%'}}>
                 <LinkedInIcon />
               </Box>
               <Text display={{ base:'none', md:'block'}}w='60%' textAlign='left'>
