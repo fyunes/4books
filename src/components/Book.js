@@ -125,7 +125,7 @@ const Book = ({
                 >
                   {published}
                 </Tag>
-                <Tooltip label="Edit book info" hasArrow>
+                <Tooltip label="Delete book" hasArrow>
                   <Button
                     onClick={(e) => {
                       e.stopPropagation();

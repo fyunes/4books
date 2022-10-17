@@ -13,6 +13,7 @@ import {
   Text,
   HStack,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const BookDetails = ({
   onOpen,
@@ -126,9 +127,11 @@ const BookDetails = ({
             <Button colorScheme="yellow" mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button colorScheme="yellow" variant="ghost">
-              Secondary Action
-            </Button>
+            <Link to={`/edit-book/${id}`}>
+              <Button colorScheme="yellow" variant="ghost">
+                Edit book
+              </Button>
+            </Link>
           </ModalFooter>
         </ModalContent>
       </Modal>

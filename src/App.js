@@ -9,6 +9,7 @@ import { ChakraProvider, Flex } from "@chakra-ui/react";
 import Library from "./pages/Library";
 import theme from "./theme";
 import "./styles/styles.css";
+import BookEdit from "./components/BookEdit";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       >
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home title="Library App" />} />
+          <Route path="/" element={<Home title="4Books | Home" />} />
           <Route
             path="/library"
             element={<Library title="4Books | My library" />}
@@ -38,6 +39,10 @@ function App() {
           <Route
             path="/sign-in"
             element={<SignInPage title="4Books | Sign In" />}
+          />
+          <Route
+            path="/edit-book/:id"
+            element={<BookEdit title="4Books | Edit book" />}
           />
         </Routes>
         <Footer />

@@ -13,13 +13,19 @@ const booksSlice = createSlice({
     deleteBook: (state, action) =>
       state.filter((book) => book.id !== action.payload),
     updateBook: (state, action) => {
-      const {title, author, year, category, id} = action.payload
-      const foundBook = state.find((book) => book.id === id)
-      if(foundBook) {
-        foundBook.title = title
-        foundBook.author = author
-        foundBook.year = year
-        foundBook.category = category
+      const { title, image, author, year, category, id, description } = action.payload;
+      console.log("id", id);
+      console.log("action payload", action.payload);
+      const foundBook = state.find((book) => book.id === id);
+      console.log("payload   ", action.payload);
+      console.log("foundbook", foundBook);
+      if (foundBook) {
+        foundBook.title = title;
+        foundBook.image = image;
+        foundBook.author = author;
+        foundBook.year = year;
+        foundBook.category = category;
+        foundBook.description = description;
       }
     },
     searchBooks: (state, action) => {
