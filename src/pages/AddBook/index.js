@@ -8,10 +8,9 @@ import {
   VStack,
   Textarea,
 } from "@chakra-ui/react";
-import { useSelector, useDispatch } from "react-redux";
-import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 import { addBook } from "../../features/books/booksSlice";
-import items from "../../assets/myBooks.json";
 import { v4 as uuid } from "uuid";
 
 const AddBook = () => {
@@ -23,11 +22,7 @@ const AddBook = () => {
     category:"",
     image:"",
     description: "",
-});
-  
-
-
-
+});  
 
 const handleChange = e => {
     setBook({
@@ -47,17 +42,7 @@ const handleSubmit = (e) => {
 console.log(books)
 const dispatch = useDispatch()
 
-// const getImage = (e) => {
-//   const cover = e.target.value;
-//   console.log(cover);
-//  }
-
-
   return (
-   
-
-
-
     <Flex w="100%" justify="center" align="center">
       <Flex
         position="relative"
@@ -79,7 +64,7 @@ const dispatch = useDispatch()
 
         <Box w="90%">
           <form onSubmit={handleSubmit}>
-            <FormControl align="center" w="100%" zIndex={1} >
+            <FormControl align="center" w="100%" zIndex={1}>
               <VStack
                 w="80%"
                 dispay="flex"
@@ -140,7 +125,6 @@ const dispatch = useDispatch()
                   onChange={handleChange}
                   value={books.category}
                 />
-
                 <Input
                   id="image"
                   name="image"
@@ -154,36 +138,9 @@ const dispatch = useDispatch()
                   onChange={handleChange}
                   value={books.image}
                 />
-
-                {/* <form
-                  action="https://www.google.com/"
-                  method="get"
-                  target="_blank"
-                >
-                  <Input
-                    id="cover"
-                    name="q"
-                    type="search"
-                    color="beige.100"
-                    bgColor="maroon.op"
-                    focusBorderColor="beige.100"
-                    borderColor="orange.100"
-                    _placeholder={{ color: "yellow.100" }}
-                    placeholder="You can search the URL here"
-                    _focus={{ backgroundColor: "maroon.op" }}
-                  />
-                  <Button
-                    mt="4%"
-                    fontSize="sm"
-                    colorScheme="yellow"
-                    onChange={getImage}
-                    type="submit"
-                  >
-                    Search
-                  </Button>
-                </form> */}
                 <Textarea
                   id="description"
+                  name="description"
                   color="beige.100"
                   bgColor="maroon.op"
                   focusBorderColor="beige.100"
@@ -192,13 +149,17 @@ const dispatch = useDispatch()
                   placeholder="Brief description of the book"
                   onChange={handleChange}
                   value={books.description}
-                />
-                <Button type="submit" w="sm" fontSize="lg" colorScheme="yellow">
+                ></Textarea>
+                <Button
+                  type="submit"
+                  w={{ base: "80%", sm: "80%", md: "80%", lg: "90%" }}
+                  fontSize="lg"
+                  colorScheme="yellow"
+                >
                   Submit
                 </Button>
-                
               </VStack>
-            </FormControl>            
+            </FormControl>
           </form>
         </Box>
 
@@ -212,9 +173,7 @@ const dispatch = useDispatch()
         ></Box>
       </Flex>
     </Flex>
-  
-
-  )
+  );
 }
 
 
