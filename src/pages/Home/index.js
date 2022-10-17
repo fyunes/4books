@@ -2,6 +2,8 @@ import { Box, Flex } from "@chakra-ui/react";
 import { useEffect } from "react";
 import HomeCarousel from "../../components/homeCarousel";
 import useWindowSize from "../../customHooks/useWindowSize";
+import ImageSlider from "../../components/CarouselMobile";
+import SlideData from "../../components/SlideData"
 
 const Home = ({ title }) => {
   useEffect(() => {
@@ -9,7 +11,6 @@ const Home = ({ title }) => {
   });
 
   const size = useWindowSize();
-  console.log("size  ", size.width);
 
   return (
     <Box
@@ -41,7 +42,7 @@ const Home = ({ title }) => {
           <HomeCarousel />
         </Flex>
       ) : (
-        "Something else"
+        <ImageSlider slides={SlideData}  />
       )}
     </Box>
   );

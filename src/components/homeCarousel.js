@@ -9,11 +9,13 @@ import {
 } from "chakra-framer-carousel";
 
 const images = [
-  "https://github.com/avilalte/skillfactory-third-project/blob/dev/src/assets/images/fr.jpg?raw=true",
-  "https://github.com/avilalte/skillfactory-third-project/blob/dev/src/assets/images/al.jpg?raw=true",
-  "https://github.com/avilalte/skillfactory-third-project/blob/dev/src/assets/images/Me.jpg?raw=true",
-  "https://github.com/avilalte/skillfactory-third-project/blob/dev/src/assets/images/fa.jpg?raw=true",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862320738334/White_Fang.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861737734144/Star_Wars_Bloodline.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862035525662/The_name_of_the_wind.jpg",
+  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861393797130/Gardens_of_the_moon.jpg",
 ];
+
+
 
 function Card({ image, index }) {
   const { onClickHandler, position } = useCarouselItem();
