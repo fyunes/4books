@@ -12,7 +12,16 @@ const booksSlice = createSlice({
     },
     deleteBook: (state, action) =>
       state.filter((book) => book.id !== action.payload),
-    updateBook: (state, action) => {},
+    updateBook: (state, action) => {
+      const {title, author, year, category, id} = action.payload
+      const foundBook = state.find((book) => book.id === id)
+      if(foundBook) {
+        foundBook.title = title
+        foundBook.author = author
+        foundBook.year = year
+        foundBook.category = category
+      }
+    },
     searchBooks: (state, action) => {
       return action.payload;
     },
