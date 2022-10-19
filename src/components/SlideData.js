@@ -1,7 +1,7 @@
 const SlideData = [
   {
     image:
-      "https://cdn.discordapp.com/attachments/1022991150333820929/1031451136768606239/Landing_msg.jpg",
+      "https://cdn.discordapp.com/attachments/1032221834747318292/1032221916389445632/Landing_msg.jpg",
   },
   {
     image:
@@ -9,7 +9,7 @@ const SlideData = [
   },
   {
     image:
-      "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861737734144/Star_Wars_Bloodline.jpg",
+      "https://cdn.discordapp.com/attachments/1032221834747318292/1032221916720803931/Star_Wars_Bloodline.jpg",
   },
   {
     image:

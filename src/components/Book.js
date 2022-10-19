@@ -28,6 +28,8 @@ const Book = ({
   pages,
   deletedBooks,
   setDeletedBooks,
+  searchResults,
+  setSearchResults,
 }) => {
   const dispatch = useDispatch();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -149,6 +151,9 @@ const Book = ({
                       e.stopPropagation();
                       dispatch(deleteBook(id));
                       setDeletedBooks([...deletedBooks, id]);
+                      setSearchResults((searchResults) => {
+                        return searchResults.filter((book) => book.id !== id);
+                      });
                       toast({
                         title: `${title}`,
                         description: "has been deleted from your library",

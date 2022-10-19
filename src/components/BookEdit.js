@@ -9,7 +9,8 @@ import {
   EditablePreview,
   EditableInput,
   EditableTextarea,
-  Center
+  Text,
+  Center,
 } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { updateBook } from "../features/books/booksSlice";
@@ -51,11 +52,17 @@ const BookEdit = ({ title }) => {
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
-        gap={5}
+        gap={3}
       >
-        <Center color="beige.100" fontSize={{base: "35px", lg: "30"}} fontWeight="700" zIndex={1}>
+        <Center
+          color="beige.100"
+          fontSize={{ base: "35px", lg: "30" }}
+          fontWeight="700"
+          zIndex={1}
+        >
           Edit book
         </Center>
+        <Text fontSize="xl">Title</Text>
         <Editable
           width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
           borderWidth={1}
@@ -72,6 +79,7 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
+        <Text fontSize="xl">Author</Text>
         <Editable
           width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
           borderWidth={1}
@@ -88,6 +96,7 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
+        <Text fontSize="xl">Category</Text>
         <Editable
           width={{ base: "80%", sm: "50%", md: "60%", lg: "50%" }}
           borderWidth={1}
@@ -104,6 +113,7 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
+        <Text fontSize="xl">Year</Text>
         <Editable
           width={{ base: "40%", sm: "30%", md: "30%", lg: "15%" }}
           textAlign="center"
@@ -121,6 +131,7 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
+        <Text fontSize="xl">Image URL</Text>
         <Editable
           width={{ base: "100%", sm: "70%", md: "80%", lg: "55%" }}
           defaultValue={book.image}
@@ -139,6 +150,7 @@ const BookEdit = ({ title }) => {
           />
           <EditablePreview />
         </Editable>
+        <Text fontSize="xl">Description</Text>
         <Editable
           width={{ base: "100%", sm: "70%", md: "80%", lg: "55%" }}
           borderWidth={1}
