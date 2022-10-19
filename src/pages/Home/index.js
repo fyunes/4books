@@ -31,8 +31,6 @@ const Home = ({ title }) => {
       {size.width > 600 ? (
         <Flex
           maxW="100%"
-          // borderWidth={1}
-          // borderColor="red"
           justifyContent="center"
           alignItems="center"
           gap="5"

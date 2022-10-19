@@ -28,7 +28,6 @@ const Book = ({
   pages,
   deletedBooks,
   setDeletedBooks,
-  searchResults,
   setSearchResults,
 }) => {
   const dispatch = useDispatch();

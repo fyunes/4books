@@ -3,15 +3,23 @@ import BooksMenu from "../../components/BookMenu";
 import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { deleteAllFilters } from "../../features/books/filtersSlice";
 
 const Library = ({ title }) => {
   const myBooks = useSelector((state) => state.books);
   const [searchResults, setSearchResults] = useState(myBooks);
   const [deletedBooks, setDeletedBooks] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     document.title = title;
   });
+
+  useEffect(() => {
+    dispatch(deleteAllFilters());
+  }, [dispatch]);
+
   return (
     <Box
       w="100%"
@@ -30,7 +38,6 @@ const Library = ({ title }) => {
         borderRadius={20}
       >
         <BooksMenu
-          deletedBooks={deletedBooks}
           searchResults={searchResults}
           setSearchResults={setSearchResults}
         />
