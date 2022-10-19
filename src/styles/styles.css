@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Monoton&display=swap");
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-body {
+html {
+  scroll-behavior: smooth;
+}
+.App {
+  font-family: "Barlow Condensed", sans-serif;
+  width: 100%;
+  min-height: 100vh;
   background: url("/src/assets/images/background.jpg");
+  background-position: fixed;
 }
-
-.divRandom {
-  border: 1px solid red;
-  width: 100px;
-  height: 100px;
+.book {
+  transition: 0.5s;
 }
+/* Provisional CSS*/

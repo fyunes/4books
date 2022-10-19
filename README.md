@@ -1,70 +1,101 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+![Image main title](https://media.discordapp.net/attachments/997992289425182791/1031383741295239189/imagotipo-4b.mixto.png)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+Exercise website for React course in Skill Factory - Avalith
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Image Print](https://media.discordapp.net/attachments/997992289425182791/1031387195765956648/print.png) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=In%20development&color=RED&style=for-the-badge)
 
-### `npm test`
+## Technologies used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)  	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-### `npm run build`
+## Prototype Baja-Baja
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Image Prototype baja-baja](https://media.discordapp.net/attachments/997992289425182791/1031390423358382120/Mobile.png)
+![Image Prototype media-baja desktop-library](https://media.discordapp.net/attachments/997992289425182791/1031377519166881882/desktop-library.jpg?width=757&height=468)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Image Prototype media-baja desktop-SigIn](https://media.discordapp.net/attachments/997992289425182791/1031377519443718225/desktop-sigin.jpg?width=761&height=468)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prototype Media-Baja
 
-### `npm run eject`
+![Image Prototype baja-baja](https://media.discordapp.net/attachments/997992289425182791/1031380956520652870/figma-media.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Trello
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Image Trello](https://media.discordapp.net/attachments/997992289425182791/1031381637369438359/unknown.png?width=1025&height=458)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Book favorites of our team
 
-## Learn More
+|![Image Fran](./src/assets/images/fr.jpg) Fran| ![Image Mel](./src/assets/images/Me.jpg) Mel | ![Image Fabri](./src/assets/images/fa.jpg) Fabri | ![Image Will](./src/assets/images/al.jpg) Alan
+| :---: | :---: | :---: | :---: |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Welcome to our project
 
-### Code Splitting
+|![Logo React](https://miro.medium.com/max/464/1*LxtdsVO0UnRDlrale42riQ.png)|This project was created with [Create React App](https://github.com/facebook/create-react-app)|
+| :---: | :---: |
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How to run our site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For this tutorial on how to set up and run our project we recommend using Visual Studio Code with its integrated terminal.
 
-### Making a Progressive Web App
+##### One of the easiest ways to do this, is to do as follows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+First copy the repository HTTPS address.
 
-### Advanced Configuration
+|![HTTPS Address](./src/assets/images/https.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Then we should position ourselves in the directory we want our folder to be downloaded
 
-### Deployment
+Next, clone our repository using git clone + the HTTPS address.
+Type in the Git terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+https://github.com/fyunes/skillfactory-third-project.git 
+```
 
-### `npm run build` fails to minify
+A folder will be created, access it by typing the following line in the terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+cd skillfactory-third-project
+```
+
+After that, you should install all dependencies for it to work properly running the following command:
+
+```
+npm install
+```
+
+If you do not wish to install them globally and to reduce long time issues you may also run:
+
+```
+npx install
+```
+
+###### Now you simply must enter
+
+```
+npm start
+```
+
+Then the app should start running smoothly without any issues.
+
+### Happy hacking!
+
+* * *
+----------------------------
+
+### Thank you for visiting our project!
+... And reread that book you liked so much...
+
+![Good Bye gif](./src/assets/images/giphy.gif)

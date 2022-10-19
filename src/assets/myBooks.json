@@ -1,0 +1,103 @@
+{
+  "books": [
+    {
+      "title": "Harry Potter and the philosopher's stone",
+      "id": "p3QQjwEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2010",
+      "description": "Ten-year-old Harry Potter is an orphan who lives in the fictional London suburb of Little Whinging, Surrey, with the Dursleys: his uncaring Aunt Petunia, loathsome Uncle Vernon, and spoiled cousin Dudley. The Dursleys barely tolerate Harry, and Dudley bullies him. One day Harry is astonished to receive a letter addressed to him in the cupboard under the stairs (where he sleeps). Before he can open the letter, however, Uncle Vernon takes it. Letters for Harry subsequently arrive each day, in increasing numbers, but Uncle Vernon tears them all up, and finally, in an attempt to escape the missives, the Dursleys go to a miserable shack on a small island. On Harry’s 11th birthday, a giant named Hagrid arrives and reveals that Harry is a wizard and that he has been accepted at the Hogwarts School of Witchcraft and Wizardry. He also sheds light on Harry’s past, informing the boy that his parents, a wizard and a witch, were killed by the evil wizard Voldemort and that Harry acquired the lightning-bolt scar on his forehead during the fatal confrontation.",
+      "category": "Juvenile Fiction",
+      "pageCount": 254,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282179033632798/unknown.png"
+    },
+    {
+      "title": "The Wise Man's Fear (The Kingkiller Chronicle: Day 2)",
+      "id": "2euKXB-3_aoC",
+      "author": "Patrick Rothfuss",
+      "year": "2011",
+      "description": "«You may have heard of me.» So begins the tale of a hero told from his own point of view — a story unequaled in fantasy literature. Now in The Wise Man's Fear, an escalating rivalry with a powerful member of the nobility forces Kvothe to leave the University and seek his fortune abroad. Adrift, penniless, and alone, he travels to Vintas, where he quickly becomes entangled in the politics of courtly society. While attempting to curry favor with a powerful noble, Kvothe uncovers an assassination attempt, comes into conflict with a rival arcanist, and leads a group of mercenaries into the wild, in an attempt to solve the mystery of who (or what) is waylaying travelers on the King's Road.",
+      "category": "Fiction",
+      "pageCount": 1200,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282240136253440/unknown.png"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire: Slytherin Collector's Edition",
+      "id": "2_mPzgEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2021",
+      "description": "Let the magic of J.K. Rowling's classic Harry Potter series take you back to Hogwarts School of Witchcraft and Wizardry. This Slytherin House Edition of Harry Potter and the Goblet of Fire celebrates the noble character of the Hogwarts house famed for its pride, ambition and cunning. Harry's fourth year at Hogwarts is packed with more great Slytherin moments and characters, culminating in the terrifying finale of the Triwizard Tournament, which sees the momentous return of Voldemort, the greatest Dark Wizard of all time ... Each Slytherin House Edition features vibrant sprayed edges and intricate silver foiling. The Goblet of Fire blazes at the very centre of the front cover, framed by stunning iconography that draws on themes and moments from J.K. Rowling's much-loved story. In addition to a bespoke introduction and exclusive insights into the magical paintings of Hogwarts, the book also boasts new illustrations by Kate Greenaway winner Levi Pinfold, including a spectacular portrait of Lord Voldemort himself. All seven books in the series will be issued in these highly collectable, beautifully crafted House Editions, designed to be treasured and read for years to come. A must-have for anyone who has ever imagined sitting under the Sorting Hat in the Great Hall at Hogwarts waiting to hear the words, «Better be SLYTHERIN!»",
+      "pageCount": 720,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282277033549854/unknown.png"
+    },
+    {
+      "title": "A Game of Thrones",
+      "id": "5NomkK4EV68C",
+      "author": "George R. R. Martin",
+      "year": "2003",
+      "description": "Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season. Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen’s brothers Jaime and Tyrion of the powerful and wealthy House Lannister—the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms. Meanwhile, across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki—whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.",
+      "category": "Fiction",
+      "pageCount": 835,
+      "image": "http://books.google.com/books/content?id=5NomkK4EV68C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "id": "NvNcAAAACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2011",
+      "description": "It is the summer holidays and soon Harry Potter will be starting his fourth year at Hogwarts School of Witchcraft and Wizardry. Harry is counting the days: there are new spells to be learnt, more Quidditch to be played, and Hogwarts castle to continue exploring. But Harry needs to be careful - there are unexpected dangers lurking...",
+      "category": "Juvenile Fiction",
+      "pageCount": 635,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282351847342101/unknown.png"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "id": "zl13g5uRM4EC",
+      "author": "J. K. Rowling",
+      "year": "2015",
+      "description": "Ever since Harry Potter had come home for the summer, the Dursleys had been so mean and hideous that all Harry wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he’s packing his bags, Harry receives a warning from a strange impish creature who says that if Harry returns to Hogwarts, disaster will strike. And strike it does. For in Harry’s second year at Hogwarts, fresh torments and horrors arise, including an outrageously stuck-up new professor and a spirit who haunts the girls’ bathroom. But then the real trouble begins – someone is turning Hogwarts students to stone. Could it be Draco Malfoy, a more poisonous rival than ever? Could it possibly be Hagrid, whose mysterious past is finally told? Or could it be the one everyone at Hogwarts most suspects… Harry Potter himself!",
+      "category": "Juvenile Fiction",
+      "pageCount": 365,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282398823546921/unknown.png"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "id": "z2hczgEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2021",
+      "description": "At age sixteen, in the midst of serious events plaguing England, Harry begins his sixth year at Hogwarts. Having been chosen captain of the Quidditch team, practices, tests, and girls are keeping him busy, but that peace and tranquility is short-lived. Despite tight security measures that protect the school, two students are brutally attacked. Dumbledore knows that, as proclaimed in the Prophecy, the time is approaching when Harry and Voldemort must face each other in a deadly match: «The only one with strong enough powers to defeat the Dark Lord is approaching... One of the two must die at the hands of the other, because neither can live as long as the other is still alive.» The old Headmaster will enlist Harry's help, and together they will undertake dangerous trips in order to try to weaken the enemy, for this the young wizard will have the help of an old potion book that belonged to a mysterious person, someone who calls himself the Half-Blood Prince.",
+      "category": "Juvenile Fiction",
+      "pageCount": 608,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282439692857364/unknown.png"
+    },
+    {
+      "title": "The Name of the Wind (The Kingkiller Chronicle: Day 1",
+      "id": "QeYF9kTMypgC",
+      "author": "Patrick Rothfuss",
+      "year": "2011",
+      "description": "Told in Kvothe's own voice, this is the tale of the magically gifted young man who grows to be the most notorious wizard his world has ever seen. The intimate narrative of his childhood in a troupe of traveling players, his years spent as a near-feral orphan in a crime-ridden city, his daringly brazen yet successful bid to enter a legendary school of magic, and his life as a fugitive after the murder of a king form a gripping coming-of-age story unrivaled in recent literature. A high-action story written with a poet's hand, The Name of the Wind is a masterpiece that will transport readers into the body and mind of a wizard.",
+      "category": "Fiction",
+      "pageCount": 880,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282482197930095/unknown.png"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban: Ravenclaw Collector's Edition",
+      "id": "FX22zQEACAAJ",
+      "author": "J. K. Rowling",
+      "year": "2020",
+      "description": "Let the magic of J.K. Rowling's classic Harry Potter series take you back to Hogwarts School of Witchcraft and Wizardry. Issued to mark the 20th anniversary of first publication of Harry Potter and the Prisoner of Azkaban, this irresistible Ravenclaw House Edition celebrates the noble character of the Hogwarts house famed for its wit, learning and wisdom. Harry's third year at Hogwarts is packed with thrilling Ravenclaw moments, including the appearance of the inimitable Professor Trelawney! With vibrant sprayed edges in Ravenclaw house livery, the book features beautiful house-themed cover artwork with intricate bronze foiling. With an exciting, bespoke introduction exploring the history of Ravenclaw House, and exclusive insights into the use of the Patronus Charm by favourite Ravenclaw characters, the book also boasts a spectacular image by Kate Greenaway winner Levi Pinfold of Cho Chang conjuring her Patronus. All seven books in the series will be issued in these highly collectable, beautifully crafted House Editions, designed to be treasured and read for years to come. A must-have for anyone who has ever imagined sitting under the Sorting Hat in the Great Hall at Hogwarts waiting to hear the words, «Better be RAVENCLAW!»",
+      "category": "Juvenile Fiction",
+      "pageCount": 416,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282526108106813/unknown.png"
+    },
+    {
+      "title": "The Slow Regard of Silent Things",
+      "id": "qQkFogEACAAJ",
+      "author": "Patrick Rothfuss",
+      "year": "2014",
+      "description": "The Slow Regard of Silent Things is a brief, bittersweet glimpse of Auri’s life, a small adventure all her own. At once joyous and haunting, this story offers a chance to see the world through Aurir’s eyes. And it gives the reader a chance to learn things that only Auri knows.... In this book, Patrick Rothfuss brings us into the world of one of The Kingkiller Chronicle’s most enigmatic characters. Full of secrets and mysteries, The Slow Regard of Silent Things is the story of a broken girl trying to live in a broken world.",
+      "category": "Juvenile Nonfiction",
+      "pageCount": 128,
+      "image": "https://cdn.discordapp.com/attachments/854123718753779762/1032282573969297479/unknown.png"
+    }
+  ]
+}
