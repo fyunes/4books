@@ -1,10 +1,12 @@
 import { Flex, Text, Tag } from "@chakra-ui/react";
-import { useSelector } from "react-redux";
 import Book from "./Book";
 
-const BooksList = ({ deletedBooks, setDeletedBooks }) => {
-  const myBooks = useSelector((state) => state.books);
-
+const BooksList = ({
+  deletedBooks,
+  setDeletedBooks,
+  searchResults,
+  setSearchResults,
+}) => {
   return (
     <Flex
       bgColor="maroon.op"
@@ -19,10 +21,12 @@ const BooksList = ({ deletedBooks, setDeletedBooks }) => {
       gap={5}
       w={{ base: "90%", sm: "80%", md: "60%", lg: "80%" }}
     >
-      {(myBooks.length &&
-        myBooks.map((book, index) => {
+      {(searchResults.length &&
+        searchResults.map((book, index) => {
           return (
             <Book
+              searchResults={searchResults}
+              setSearchResults={setSearchResults}
               deletedBooks={deletedBooks}
               setDeletedBooks={setDeletedBooks}
               id={book.id}
@@ -37,7 +41,16 @@ const BooksList = ({ deletedBooks, setDeletedBooks }) => {
             />
           );
         })) || (
-        <Text display="flex" fontSize={20} textAlign="center" color="beige.100">
+        <Text
+          display="flex"
+          flexDirection={{ base: "column", md: "row" }}
+          justifyContent="center"
+          gap={2}
+          alignItems="center"
+          fontSize={20}
+          textAlign="center"
+          color="beige.100"
+        >
           Nothing to see here! Click on the{" "}
           <Tag mx={1} colorScheme="yellow">
             Add new book

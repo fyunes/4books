@@ -6,100 +6,130 @@ import {
   Divider,
   Tag,
   Select,
-  useToast,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { searchBooks, showAll } from "../features/books/booksSlice";
-import items from "../assets/myBooks.json";
-import { selectFilter, deleteFilter } from "../features/books/filtersSlice";
+import {
+  selectFilter,
+  deleteFilter,
+  deleteAllFilters,
+} from "../features/books/filtersSlice";
 
 const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
   const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
   const myBooks = useSelector((state) => state.books);
-  const toast = useToast();
-  const [JSONbooks, setJSONbooks] = useState([]);
+  // const toast = useToast();
   const [searchInput, setSearchInput] = useState("");
-  const [hasMatch, setHasMatch] = useState(false);
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  // const [hasMatch, setHasMatch] = useState(false);
+  const [selectedFilters, setSelectedFilters] = useState(() => []);
+  const [availableFilters, setAvailableFilters] = useState({
+    authors: [],
+    categories: [],
+    years: [],
+  });
 
   useEffect(() => {
-    const books = items.books;
-    setJSONbooks(books);
-    const parcialResults = () => {
-      if (!selectedFilters.length) return myBooks;
-      myBooks.map((book) => {
-        if (selectedFilters.includes(book.author || book.category || book.year))
-          return book;
-        else return null;
-      });
+    const getFilters = (filterName, books = searchResults) => {
+      return [...new Set(books.map((book) => book[filterName]))]
+        .sort()
+        .map((element) => {
+          return { value: element, isSelected: false };
+        });
     };
-    if (parcialResults.length <= 0) setSearchResults(JSONbooks);
-    else setSearchResults(parcialResults);
-    setSearchResults(books);
-  }, [selectedFilters, myBooks, JSONbooks, setSearchResults]);
+    setAvailableFilters((availableFilters) => {
+      return {
+        ...availableFilters,
+        authors: getFilters("author"),
+        categories: getFilters("category"),
+        years: getFilters("year"),
+      };
+    });
+  }, [searchResults]);
+
+  useEffect(() => {
+    let newResults = [...myBooks];
+    if (selectedFilters.length > 0) {
+      for (let filter of selectedFilters) {
+        newResults = newResults.filter(
+          (book) => book[filter.type] === filter.value
+        );
+      }
+    }
+    setSearchResults(newResults);
+  }, [selectedFilters, myBooks, setSearchResults]);
 
   const handleSelectFilter = (e, key) => {
-    setSelectedFilters([...selectedFilters, e.target.value]);
+    setSelectedFilters([
+      ...selectedFilters,
+      { type: key, value: e.target.value },
+    ]);
     dispatch(
       selectFilter({ filterName: e.target.name, filterValue: e.target.value })
     );
-    const parcialResults = myBooks.filter(
+    const newResults = searchResults.filter(
       (book) => book[key] === e.target.value
     );
-    dispatch(searchBooks(parcialResults));
+    console.log("parcial results", newResults);
+    setSearchResults((searchResults) => (searchResults = newResults));
+    console.log("searchResults", searchResults);
+    // dispatch(searchBooks(parcialResults));
   };
 
+  console.log("searchResults", searchResults);
+  console.log("available filters", availableFilters);
+
   const handleChange = () => {
-    if (!searchInput) return myBooks;
-    const isFoundIn = (where) => where.toLowerCase().includes(searchInput);
-    const results = [];
-    myBooks.forEach((book) => {
-      if (
-        isFoundIn(book.title) ||
-        isFoundIn(book.description) ||
-        isFoundIn(book.author)
-      )
-        results.push(book);
-    });
-    results.length && setHasMatch(true);
-    setSearchResults(results);
+    if (searchInput.length === 1) setSearchResults(myBooks);
+    else {
+      const isFoundIn = (where) => where.toLowerCase().includes(searchInput);
+      const results = [];
+      myBooks.forEach((book) => {
+        if (
+          isFoundIn(book.title) ||
+          isFoundIn(book.description) ||
+          isFoundIn(book.author)
+        )
+          results.push(book);
+      });
+      setSearchResults(results);
+    }
   };
 
   const handleDeleteFilter = (filterName, value) => {
     const filterValue = value;
-    setSelectedFilters((selectedFilters) =>
-      selectedFilters.filter((filter) => filter !== filterValue)
-    );
+    setSelectedFilters((selectedFilters) => {
+      return selectedFilters.length > 1
+        ? selectedFilters.filter((filter) => filter.value !== filterValue)
+        : [];
+    });
     dispatch(
       deleteFilter({
         filterName,
         filterValue,
       })
     );
-
-    dispatch(searchBooks(searchResults));
   };
 
-  const handleSearch = () => {
-    if (!hasMatch)
-      toast({
-        title: "Not found",
-        description: "Your search doesn't match any of your books",
-        status: "error",
-        duration: 2000,
-        isClosable: true,
-        position: "top-right ",
-      });
-    if (searchInput.length) {
-      dispatch(searchBooks(searchResults));
-      setSearchInput("");
-      setHasMatch(false);
-    }
-  };
+  console.log("selected filters ..", selectedFilters);
+
+  // const handleSearch = () => {
+  //   if (!hasMatch)
+  //     toast({
+  //       title: "Not found",
+  //       description: "Your search doesn't match any of your books",
+  //       status: "error",
+  //       duration: 2000,
+  //       isClosable: true,
+  //       position: "top-right ",
+  //     });
+  //   if (searchInput.length) {
+  //     setSearchInput("");
+  //     setHasMatch(false);
+  //   }
+  // };
 
   return (
     <VStack
@@ -120,9 +150,9 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
           setSearchInput(e.target.value);
           handleChange();
         }}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") handleSearch(e);
-        }}
+        // onKeyDown={(e) => {
+        //   if (e.key === "Enter") handleSearch(e);
+        // }}
         focusBorderColor="beige.100"
         w="80%"
         _placeholder={{ color: "yellow.100" }}
@@ -223,7 +253,7 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
           colorScheme="black"
           placeholder="Filter by Author"
         >
-          {filters.authors.map((author, index) => {
+          {availableFilters.authors.map((author, index) => {
             if (author.isSelected) return null;
             return (
               <option
@@ -248,7 +278,7 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
           colorScheme="black"
           placeholder="Filter by Category"
         >
-          {filters.categories.map((category, index) => {
+          {availableFilters.categories.map((category, index) => {
             if (category.isSelected) return null;
             return (
               <option
@@ -273,7 +303,7 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
           colorScheme="black"
           placeholder="Filter by Year"
         >
-          {filters.years.map((year, index) => {
+          {availableFilters.years.map((year, index) => {
             if (year.isSelected) return null;
             return (
               <option
@@ -288,15 +318,23 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
         </Select>
       </VStack>
       <HStack>
-        <Button
-          onClick={(e) => handleSearch(e)}
+        {/* <Button
+          onClick={(e) => {
+            handleSearch(e);
+            setSearchInput("");
+          }}
           fontSize="lg"
           colorScheme="yellow"
         >
           Search book
-        </Button>
+        </Button> */}
         <Button
-          onClick={(e) => dispatch(showAll(deletedBooks))}
+          onClick={(e) => {
+            setSearchResults(myBooks);
+            setSearchInput("");
+            dispatch(deleteAllFilters());
+            setSelectedFilters(() => []);
+          }}
           fontSize="lg"
           colorScheme="yellow"
         >

@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import items from "../../assets/myBooks.json";
-
 const books = items.books;
 
 const getFilters = (filterName, currentBooks = books) => {
@@ -36,12 +35,18 @@ const filtersSlice = createSlice({
       ).isSelected = false;
       state.filtersSelected -= 1;
     },
-    updateFilters: (state, action) => {
+    deleteAllFilters: (state) => {
+      state.filtersSelected = 0;
+      state.authors.map((filter) => (filter.isSelected = false));
+      state.categories.map((filter) => (filter.isSelected = false));
+      state.years.map((filter) => (filter.isSelected = false));
+    },
+    updateFilters: (action) => {
       return action.payload;
     },
   },
 });
 
-export const { selectFilter, deleteFilter, updateFilters } =
+export const { selectFilter, deleteFilter, deleteAllFilters, updateFilters } =
   filtersSlice.actions;
 export default filtersSlice.reducer;
