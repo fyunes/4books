@@ -10,6 +10,7 @@ import Library from "./pages/Library";
 import theme from "./theme";
 import "./styles/styles.css";
 import BookEdit from "./components/BookEdit";
+import Page404 from "./components/Page404";
 
 function App() {
   return (
@@ -43,6 +44,10 @@ function App() {
           <Route
             path="/edit-book/:id"
             element={<BookEdit title="4Books | Edit book" />}
+          />
+          <Route
+            path="/*"
+            element={<Page404 title="4Books | Page not found" />}
           />
         </Routes>
         <Footer />

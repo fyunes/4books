@@ -5,7 +5,6 @@ import Logo from "./Logo";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <Flex
       px={10}

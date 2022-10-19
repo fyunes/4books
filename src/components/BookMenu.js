@@ -17,13 +17,11 @@ import {
   deleteAllFilters,
 } from "../features/books/filtersSlice";
 
-const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
+const BookMenu = ({ searchResults, setSearchResults }) => {
   const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
   const myBooks = useSelector((state) => state.books);
-  // const toast = useToast();
   const [searchInput, setSearchInput] = useState("");
-  // const [hasMatch, setHasMatch] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState(() => []);
   const [availableFilters, setAvailableFilters] = useState({
     authors: [],
@@ -72,14 +70,8 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
     const newResults = searchResults.filter(
       (book) => book[key] === e.target.value
     );
-    console.log("parcial results", newResults);
     setSearchResults((searchResults) => (searchResults = newResults));
-    console.log("searchResults", searchResults);
-    // dispatch(searchBooks(parcialResults));
   };
-
-  console.log("searchResults", searchResults);
-  console.log("available filters", availableFilters);
 
   const handleChange = () => {
     if (searchInput.length === 1) setSearchResults(myBooks);
@@ -113,24 +105,6 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
     );
   };
 
-  console.log("selected filters ..", selectedFilters);
-
-  // const handleSearch = () => {
-  //   if (!hasMatch)
-  //     toast({
-  //       title: "Not found",
-  //       description: "Your search doesn't match any of your books",
-  //       status: "error",
-  //       duration: 2000,
-  //       isClosable: true,
-  //       position: "top-right ",
-  //     });
-  //   if (searchInput.length) {
-  //     setSearchInput("");
-  //     setHasMatch(false);
-  //   }
-  // };
-
   return (
     <VStack
       color="beige.100"
@@ -150,9 +124,6 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
           setSearchInput(e.target.value);
           handleChange();
         }}
-        // onKeyDown={(e) => {
-        //   if (e.key === "Enter") handleSearch(e);
-        // }}
         focusBorderColor="beige.100"
         w="80%"
         _placeholder={{ color: "yellow.100" }}
@@ -318,16 +289,6 @@ const BookMenu = ({ deletedBooks, searchResults, setSearchResults }) => {
         </Select>
       </VStack>
       <HStack>
-        {/* <Button
-          onClick={(e) => {
-            handleSearch(e);
-            setSearchInput("");
-          }}
-          fontSize="lg"
-          colorScheme="yellow"
-        >
-          Search book
-        </Button> */}
         <Button
           onClick={(e) => {
             setSearchResults(myBooks);

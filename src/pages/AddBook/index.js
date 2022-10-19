@@ -59,7 +59,6 @@ const AddBook = ({ title }) => {
       })
     );
   };
-  console.log(books);
   const dispatch = useDispatch();
 
   return (
