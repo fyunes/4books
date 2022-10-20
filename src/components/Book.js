@@ -72,6 +72,7 @@ const Book = ({
             borderWidth={1}
             borderColor="beige.100"
             w="65%"
+            shadow="xl"
             h="60%"
           >
             <Image
