@@ -38,7 +38,7 @@ const Book = ({
     <>
       <Tooltip
         placement="top"
-        label="Edit book info"
+        label="See & Edit book details"
         bg="beige.100"
         color="brown.900"
         fontSize="md"
@@ -120,7 +120,7 @@ const Book = ({
               >
                 {author}
               </Heading>
-              <Flex gap={3}>
+              <Flex gap={2}>
                 <Tag
                   fontSize="1.1rem"
                   color="yellow.100"

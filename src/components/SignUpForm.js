@@ -11,7 +11,7 @@ import {
 
 
 
-const Form = () => {
+const SignUpForm = () => {
   return (
     
     <Flex
@@ -67,4 +67,4 @@ const Form = () => {
   )
 };
 
-export default Form;
+export default SignUpForm;
