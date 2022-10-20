@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Flex } from "@chakra-ui/react";
-import SignIn from "../../components/SignIn";
+import SignInForm from "../../components/SignInForm";
 
 const SignInPage = ({ title }) => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const SignInPage = ({ title }) => {
 
   return (
     <Flex justify="center" align="center">
-      <SignIn />
+      <SignInForm />
     </Flex>
   );
 };
