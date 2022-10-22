@@ -41,9 +41,6 @@ const filtersSlice = createSlice({
       state.categories.map((filter) => (filter.isSelected = false));
       state.years.map((filter) => (filter.isSelected = false));
     },
-    updateFilters: (action) => {
-      return action.payload;
-    },
   },
 });
 
