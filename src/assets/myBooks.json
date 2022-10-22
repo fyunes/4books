@@ -76,9 +76,8 @@
       "author": "Suzanne Collins",
       "year": "2012",
       "description": "First in the ground-breaking HUNGER GAMES trilogy, this new foiled edition of THE HUNGER GAMES is available for a limited period of time. Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature.",
-      "pageCount": 464,
       "category": "Juvenile Fiction",
-
+      "pageCount": 464,
       "image": "http://books.google.com/books/content?id=_zSzAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
     {
@@ -146,6 +145,7 @@
       "id": "UVMGAQAAIAAJ",
       "author": "Arthur Conan Doyle",
       "year": "1957",
+      "description": "The First Book of Sherlock Holmes by Sir Arthur Conan Doyle",
       "category": "Detective stories",
       "pageCount": 1777,
       "image": "https://i.pinimg.com/474x/88/ce/0d/88ce0df399383381067d6716d52fd8bf--sherlock-holmes.jpg"
