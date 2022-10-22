@@ -21,7 +21,7 @@ const BookMenu = ({ searchResults, setSearchResults }) => {
   const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
   const myBooks = useSelector((state) => state.books);
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState(() => "");
   const [selectedFilters, setSelectedFilters] = useState(() => []);
   const [availableFilters, setAvailableFilters] = useState({
     authors: [],
@@ -56,8 +56,21 @@ const BookMenu = ({ searchResults, setSearchResults }) => {
         );
       }
     }
-    setSearchResults(newResults);
-  }, [selectedFilters, myBooks, setSearchResults]);
+    if (searchInput) {
+      const isFoundIn = (where) => where.toLowerCase().includes(searchInput);
+      const results = [];
+      newResults.forEach((book) => {
+        if (
+          isFoundIn(book.title) ||
+          isFoundIn(book.description) ||
+          isFoundIn(book.author)
+        ) {
+          results.push(book);
+        }
+      });
+      setSearchResults(results);
+    } else setSearchResults(newResults);
+  }, [selectedFilters, myBooks, setSearchResults, searchInput]);
 
   const handleSelectFilter = (e, key) => {
     setSelectedFilters([
@@ -71,23 +84,6 @@ const BookMenu = ({ searchResults, setSearchResults }) => {
       (book) => book[key] === e.target.value
     );
     setSearchResults((searchResults) => (searchResults = newResults));
-  };
-
-  const handleChange = () => {
-    if (searchInput.length === 1) setSearchResults(myBooks);
-    else {
-      const isFoundIn = (where) => where.toLowerCase().includes(searchInput);
-      const results = [];
-      myBooks.forEach((book) => {
-        if (
-          isFoundIn(book.title) ||
-          isFoundIn(book.description) ||
-          isFoundIn(book.author)
-        )
-          results.push(book);
-      });
-      setSearchResults(results);
-    }
   };
 
   const handleDeleteFilter = (filterName, value) => {
@@ -122,7 +118,7 @@ const BookMenu = ({ searchResults, setSearchResults }) => {
         value={searchInput}
         onChange={(e) => {
           setSearchInput(e.target.value);
-          handleChange();
+          // handleChange();
         }}
         focusBorderColor="beige.100"
         w="80%"
