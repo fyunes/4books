@@ -1,4 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
+import logo from "../assets/images/logo_colors.png";
+import logo2 from "../assets/images/lgotipo-4b.mixto.png";
 
 const Logo = () => {
   return (
@@ -12,14 +14,14 @@ const Logo = () => {
       <Box>
         <Image
           w={{ base: "80px", sm: "100px", md: "100px" }}
-          src="../assets/images/logo_colors.png"
+          src={logo}
           alt="Logo"
         />
       </Box>
       <Box display="flex" alignItems="center">
         <Image
           w={{ base: "170px", sm: "200px", md: "220px" }}
-          src="../assets/images/logtipo-4b.mixto.png"
+          src={logo2}
           alt="Name App"
         />
       </Box>
