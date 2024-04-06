@@ -1,4 +1,4 @@
-import { Flex, Button, HStack, Image, Tooltip} from "@chakra-ui/react";
+import { Flex, Button, HStack, Image, Tooltip } from "@chakra-ui/react";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import {
   Carousel,
@@ -7,14 +7,13 @@ import {
   CarouselItems,
   useCarousel,
 } from "chakra-framer-carousel";
+import image1 from "../assets/images/carousel/Landing-msg.jpg";
+import image2 from "../assets/images/carousel/Gardens-of-the-moon.jpg";
+import image3 from "../assets/images/carousel/Star-Wars-Bloodline.jpg";
+import image4 from "../assets/images/carousel/The-name-of-the-wind.jpg";
+import image5 from "../assets/images/carousel/White-Fang.jpg";
 
-const images = [
-  "https://cdn.discordapp.com/attachments/1032221834747318292/1032221916389445632/Landing_msg.jpg",
-  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437861393797130/Gardens_of_the_moon.jpg",
-  "https://cdn.discordapp.com/attachments/1032221834747318292/1032221916720803931/Star_Wars_Bloodline.jpg",
-  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862035525662/The_name_of_the_wind.jpg",
-  "https://cdn.discordapp.com/attachments/1022991150333820929/1031437862320738334/White_Fang.jpg",
-];
+const images = [image1, image2, image3, image4, image5];
 
 function Card({ image, index }) {
   const { onClickHandler, position } = useCarouselItem();
@@ -70,13 +69,13 @@ function Toolbar() {
           </Button>
         </Tooltip>
         <Tooltip placement="bottom" label="Next" bg="brown.900" hasArrow>
-        <Button
-          colorScheme="yellow"
-          w={{ base: "40px", sm: "55px", md: "65px" }}
-          onClick={onPrevious}
-        >
-          <ArrowForwardIcon />
-        </Button>
+          <Button
+            colorScheme="yellow"
+            w={{ base: "40px", sm: "55px", md: "65px" }}
+            onClick={onPrevious}
+          >
+            <ArrowForwardIcon />
+          </Button>
         </Tooltip>
       </HStack>
     </Flex>
