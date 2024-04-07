@@ -1,6 +1,7 @@
 import { Box, Image } from "@chakra-ui/react";
+
 import logo from "../assets/images/logo_colors.png";
-import logo2 from "../assets/images/lgotipo-4b.mixto.png";
+import logo2 from "../assets/images/logotipo-4b-mixto.png";
 
 const Logo = () => {
   return (
